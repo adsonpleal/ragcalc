@@ -8,6 +8,7 @@ export default defineConfig({
         home: resolve(__dirname, 'index.html'),
         memoravel: resolve(__dirname, 'calc/memoravel/index.html'),
         diadema: resolve(__dirname, 'calc/diadema/index.html'),
+        martelo: resolve(__dirname, 'calc/martelo/index.html'),
       },
     },
   },

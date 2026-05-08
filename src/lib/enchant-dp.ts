@@ -3,15 +3,19 @@ export interface EnchantTransition {
   successChance: number;
 }
 
-export interface EnchantConfig {
-  id: string;
+// Shape used by the home page card for any calculator type.
+export interface CalculatorCard {
   slug: string;
-  title: string;
   shortTitle: string;
   itemName: string;
+  description: string;
+}
+
+export interface EnchantConfig extends CalculatorCard {
+  id: string;
+  title: string;
   itemNameShort: string;
   itemNameShortPlural: string;
-  description: string;
   referenceUrl: string;
   referenceLabel: string;
   transitions: EnchantTransition[];

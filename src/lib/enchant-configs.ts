@@ -1,4 +1,5 @@
-import type { EnchantConfig } from './enchant-dp';
+import type { CalculatorCard, EnchantConfig } from './enchant-dp';
+import { MARTELO_CONFIG } from './martelo-math';
 
 export const MEMORAVEL_CONFIG: EnchantConfig = {
   id: 'memoravel',
@@ -50,4 +51,8 @@ export const DIADEMA_CONFIG: EnchantConfig = {
   ],
 };
 
-export const CALCULATORS: EnchantConfig[] = [MEMORAVEL_CONFIG, DIADEMA_CONFIG];
+export const CALCULATORS: CalculatorCard[] = [
+  MEMORAVEL_CONFIG,
+  DIADEMA_CONFIG,
+  MARTELO_CONFIG,
+];
