@@ -116,8 +116,8 @@ export function renderCalculator(root: HTMLElement, cfg: EnchantConfig): void {
       </section>
     </main>
     <footer class="site-footer">
-      <p>Veja também: <a href="https://ragnarecap.web.app/" target="_blank" rel="noopener noreferrer">RagnaRecap</a> — análise de replays de Ragnarok Online.</p>
-      <p>Projeto open source. Sugestões e bugs no <a href="https://github.com/adsonpleal/ragcalc" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+      <p>Veja mais ferramentas em <a href="https://latam-tools.com.br" target="_blank" rel="noopener noreferrer">latam-tools.com.br</a>.</p>
+      <p>Entre no nosso <a href="https://discord.gg/JCXTqqWq9Q" target="_blank" rel="noopener noreferrer">Discord</a>. Projeto open source no <a href="https://github.com/adsonpleal/ragcalc" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
     </footer>
   `;
 
