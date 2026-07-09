@@ -51,7 +51,16 @@ export const DIADEMA_CONFIG: EnchantConfig = {
   ],
 };
 
+export const EXP_CARD: CalculatorCard = {
+  slug: 'exp',
+  shortTitle: 'Conjunto de EXP',
+  itemName: 'Vários (conjunto de +% EXP)',
+  description:
+    'Monte o conjunto que maximiza o +% de EXP ao derrotar monstros, veja o total por faixa de nível e a prévia do personagem.',
+};
+
 export const CALCULATORS: CalculatorCard[] = [
+  EXP_CARD,
   MEMORAVEL_CONFIG,
   DIADEMA_CONFIG,
   MARTELO_CONFIG,

@@ -1,3 +1,4 @@
+import { APP_VERSION } from './changelog';
 import { CALCULATORS } from './lib/enchant-configs';
 import { applySeo, siteJsonLd } from './lib/seo';
 import './styles/global.css';
@@ -32,6 +33,7 @@ root.innerHTML = `
   <footer class="site-footer">
     <p>Veja mais ferramentas em <a href="https://latam-tools.com.br" target="_blank" rel="noopener noreferrer">latam-tools.com.br</a>.</p>
     <p>Entre no nosso <a href="https://discord.gg/JCXTqqWq9Q" target="_blank" rel="noopener noreferrer">Discord</a>. Projeto open source no <a href="https://github.com/adsonpleal/ragcalc" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    <p class="footer-version"><a href="https://github.com/adsonpleal/ragcalc/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">RagCalc v${APP_VERSION}</a></p>
   </footer>
 `;
 

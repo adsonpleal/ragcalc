@@ -1,0 +1,2487 @@
+{
+ "items": [
+  {
+   "id": 19242,
+   "name": "Tiara Felina",
+   "slot": "topo",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": "10% até o nv.99; 4% do nv.100 em diante.",
+   "raceOnly": null,
+   "view": 816,
+   "dp": "https://www.divine-pride.net/database/item/19242",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Tiara+Felina"
+  },
+  {
+   "id": 400758,
+   "name": "Gorro Felino Poderoso",
+   "slot": "topo",
+   "exp": {
+    "ate99": 12,
+    "de100a174": 12,
+    "nv175mais": 12
+   },
+   "caveats": "+3% a cada 3 refinos — valor considera refino +12 (+9 = 9%).",
+   "raceOnly": null,
+   "view": 1985,
+   "dp": "https://www.divine-pride.net/database/item/400758",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Gorro+Felino+Poderoso"
+  },
+  {
+   "id": 400759,
+   "name": "Gorro Felino Mágico",
+   "slot": "topo",
+   "exp": {
+    "ate99": 12,
+    "de100a174": 12,
+    "nv175mais": 12
+   },
+   "caveats": "+3% a cada 3 refinos — valor considera refino +12 (+9 = 9%). Versão mágica.",
+   "raceOnly": null,
+   "view": 1984,
+   "dp": "https://www.divine-pride.net/database/item/400759",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Gorro+Felino+M%C3%A1gico"
+  },
+  {
+   "id": 19157,
+   "name": "Boneca Insurgente",
+   "slot": "topo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Também dá Taxa de DROP +5%.",
+   "raceOnly": null,
+   "view": 1444,
+   "dp": "https://www.divine-pride.net/database/item/19157",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Boneca+Insurgente"
+  },
+  {
+   "id": 18569,
+   "name": "Chapéu de Ovelha Fofinha",
+   "slot": "topo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Exige refino +10 ou mais.",
+   "raceOnly": null,
+   "view": 738,
+   "dp": "https://www.divine-pride.net/database/item/18569",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Chap%C3%A9u+de+Ovelha+Fofinha"
+  },
+  {
+   "id": 18571,
+   "name": "Chapéu das Flores Encantadas",
+   "slot": "topo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/18571",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Chap%C3%A9u+das+Flores+Encantadas"
+  },
+  {
+   "id": 18816,
+   "name": "Boné do Aluno Exemplar",
+   "slot": "topo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "+5% de EXP apenas no conjunto com Uniforme Escolar + Lápis Vermelho.",
+   "raceOnly": null,
+   "view": 929,
+   "dp": "https://www.divine-pride.net/database/item/18816",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bon%C3%A9+do+Aluno+Exemplar"
+  },
+  {
+   "id": 18817,
+   "name": "Boné do Aluno Travesso",
+   "slot": "topo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "+5% de EXP apenas no conjunto com Uniforme Escolar + Lápis Vermelho.",
+   "raceOnly": null,
+   "view": 930,
+   "dp": "https://www.divine-pride.net/database/item/18817",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bon%C3%A9+do+Aluno+Travesso"
+  },
+  {
+   "id": 19135,
+   "name": "Espírito da Chung E",
+   "slot": "topo",
+   "exp": {
+    "ate99": 1,
+    "de100a174": 1,
+    "nv175mais": 1
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 882,
+   "dp": "https://www.divine-pride.net/database/item/19135",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Esp%C3%ADrito+da+Chung+E"
+  },
+  {
+   "id": 400097,
+   "name": "Protetor das Marés",
+   "slot": "topo",
+   "exp": {
+    "ate99": 20,
+    "de100a174": 20,
+    "nv175mais": 20
+   },
+   "caveats": null,
+   "raceOnly": "Peixe e Humanoide",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/400097",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Protetor+das+Mar%C3%A9s"
+  },
+  {
+   "id": 18680,
+   "name": "Chapéu de Perereca",
+   "slot": "topo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": "Inseto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/18680",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Chap%C3%A9u+de+Perereca"
+  },
+  {
+   "id": 5467,
+   "name": "Elmo do Dragão",
+   "slot": "topo",
+   "exp": {
+    "ate99": 8,
+    "de100a174": 8,
+    "nv175mais": 8
+   },
+   "caveats": "+3% base, +5% adicional (ver condição no DP).",
+   "raceOnly": "Dragão",
+   "view": 464,
+   "dp": "https://www.divine-pride.net/database/item/5467",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Elmo+do+Drag%C3%A3o"
+  },
+  {
+   "id": 19026,
+   "name": "Protetor de Preamar",
+   "slot": "topo",
+   "exp": {
+    "ate99": 20,
+    "de100a174": 20,
+    "nv175mais": 20
+   },
+   "caveats": "Posição a confirmar no divine-pride.",
+   "raceOnly": "Peixe",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/19026",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Protetor+de+Preamar"
+  },
+  {
+   "id": 19117,
+   "name": "Super Óculos Poring",
+   "slot": "meio",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+5% adicional no conjunto com Botas do ArchAngeling. Também DROP +5% (+5%).",
+   "raceOnly": null,
+   "view": 954,
+   "dp": "https://www.divine-pride.net/database/item/19117",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Super+%C3%93culos+Poring"
+  },
+  {
+   "id": 19118,
+   "name": "Super Óculos Poring",
+   "slot": "meio",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": "Variante mais fraca (mesmo nome, id 19118); +4% adicional no conjunto com Botas do ArchAngeling.",
+   "raceOnly": null,
+   "view": 954,
+   "dp": "https://www.divine-pride.net/database/item/19118",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Super+%C3%93culos+Poring"
+  },
+  {
+   "id": 18912,
+   "name": "Pombo Revelador",
+   "slot": "meio",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "+5% de EXP apenas no conjunto com Asas de Anjo (topo).",
+   "raceOnly": null,
+   "view": 1034,
+   "dp": "https://www.divine-pride.net/database/item/18912",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Pombo+Revelador"
+  },
+  {
+   "id": 18913,
+   "name": "Corvo",
+   "slot": "meio",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "+5% de EXP apenas no conjunto com Coroa do Líder.",
+   "raceOnly": null,
+   "view": 1035,
+   "dp": "https://www.divine-pride.net/database/item/18913",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Corvo"
+  },
+  {
+   "id": 410012,
+   "name": "Comunicador Avançado",
+   "slot": "meio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1266,
+   "dp": "https://www.divine-pride.net/database/item/410012",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Comunicador+Avan%C3%A7ado"
+  },
+  {
+   "id": 410013,
+   "name": "Comunicador Avançado",
+   "slot": "meio",
+   "exp": {
+    "ate99": 1,
+    "de100a174": 1,
+    "nv175mais": 1
+   },
+   "caveats": "Variante mais fraca (mesmo nome, id 410013).",
+   "raceOnly": null,
+   "view": 1266,
+   "dp": "https://www.divine-pride.net/database/item/410013",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Comunicador+Avan%C3%A7ado"
+  },
+  {
+   "id": 5397,
+   "name": "Máscara de Mergulho",
+   "slot": "meio",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": null,
+   "raceOnly": "Peixe",
+   "view": 400,
+   "dp": "https://www.divine-pride.net/database/item/5397",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=M%C3%A1scara+de+Mergulho"
+  },
+  {
+   "id": 5796,
+   "name": "[Aluguel] Disfarce 1",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": null,
+   "view": 369,
+   "dp": "https://www.divine-pride.net/database/item/5796",
+   "market": null
+  },
+  {
+   "id": 19095,
+   "name": "Balões da Família Poring",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1289,
+   "dp": "https://www.divine-pride.net/database/item/19095",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%B5es+da+Fam%C3%ADlia+Poring"
+  },
+  {
+   "id": 19143,
+   "name": "Balão de Poring",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1426,
+   "dp": "https://www.divine-pride.net/database/item/19143",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Poring"
+  },
+  {
+   "id": 19146,
+   "name": "Balão de Marin",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1430,
+   "dp": "https://www.divine-pride.net/database/item/19146",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Marin"
+  },
+  {
+   "id": 19147,
+   "name": "Balão de Drops",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1427,
+   "dp": "https://www.divine-pride.net/database/item/19147",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Drops"
+  },
+  {
+   "id": 19148,
+   "name": "Balão de Poring Natalino",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1428,
+   "dp": "https://www.divine-pride.net/database/item/19148",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Poring+Natalino"
+  },
+  {
+   "id": 19149,
+   "name": "Balão de Poporing",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1429,
+   "dp": "https://www.divine-pride.net/database/item/19149",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Poporing"
+  },
+  {
+   "id": 19150,
+   "name": "Balão de Metaling",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1431,
+   "dp": "https://www.divine-pride.net/database/item/19150",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Metaling"
+  },
+  {
+   "id": 19151,
+   "name": "Balão de Deviling",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1434,
+   "dp": "https://www.divine-pride.net/database/item/19151",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Deviling"
+  },
+  {
+   "id": 19152,
+   "name": "Balão de Angeling",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1435,
+   "dp": "https://www.divine-pride.net/database/item/19152",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Angeling"
+  },
+  {
+   "id": 19153,
+   "name": "Balão de Ghostring",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1436,
+   "dp": "https://www.divine-pride.net/database/item/19153",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Ghostring"
+  },
+  {
+   "id": 19154,
+   "name": "Balão de Archangeling",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1437,
+   "dp": "https://www.divine-pride.net/database/item/19154",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bal%C3%A3o+de+Archangeling"
+  },
+  {
+   "id": 19243,
+   "name": "Laço Encantado do Antonio",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Também dá Taxa de DROP +5%.",
+   "raceOnly": null,
+   "view": 1492,
+   "dp": "https://www.divine-pride.net/database/item/19243",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=La%C3%A7o+Encantado+do+Antonio"
+  },
+  {
+   "id": 5596,
+   "name": "Trevo Festivo",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 571,
+   "dp": "https://www.divine-pride.net/database/item/5596",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Trevo+Festivo"
+  },
+  {
+   "id": 15186,
+   "name": "Uniforme de Kafra",
+   "slot": "armadura",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Também dá Taxa de DROP +5%.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/15186",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Uniforme+de+Kafra"
+  },
+  {
+   "id": 15152,
+   "name": "Cota Esmeralda",
+   "slot": "armadura",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/15152",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Cota+Esmeralda"
+  },
+  {
+   "id": 15153,
+   "name": "Capote Esmeralda",
+   "slot": "armadura",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/15153",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Capote+Esmeralda"
+  },
+  {
+   "id": 15154,
+   "name": "Túnica Esmeralda",
+   "slot": "armadura",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/15154",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=T%C3%BAnica+Esmeralda"
+  },
+  {
+   "id": 15155,
+   "name": "Manto Esmeralda",
+   "slot": "armadura",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/15155",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Manto+Esmeralda"
+  },
+  {
+   "id": 13001,
+   "name": "Matadora de Dragão",
+   "slot": "arma",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": null,
+   "raceOnly": "Dragão",
+   "view": 1,
+   "dp": "https://www.divine-pride.net/database/item/13001",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Matadora+de+Drag%C3%A3o"
+  },
+  {
+   "id": 13030,
+   "name": "Matadora de Dragão",
+   "slot": "arma",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "Versão com 2 slots.",
+   "raceOnly": "Dragão",
+   "view": 1,
+   "dp": "https://www.divine-pride.net/database/item/13030",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Matadora+de+Drag%C3%A3o"
+  },
+  {
+   "id": 1526,
+   "name": "Maça de Talho",
+   "slot": "arma",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": "Morto-Vivo",
+   "view": 8,
+   "dp": "https://www.divine-pride.net/database/item/1526",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Ma%C3%A7a+de+Talho"
+  },
+  {
+   "id": 28904,
+   "name": "Vembrassa Esmeralda",
+   "slot": "escudo",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1,
+   "dp": "https://www.divine-pride.net/database/item/28904",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Vembrassa+Esmeralda"
+  },
+  {
+   "id": 28905,
+   "name": "Broquel Esmeralda",
+   "slot": "escudo",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 1,
+   "dp": "https://www.divine-pride.net/database/item/28905",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Broquel+Esmeralda"
+  },
+  {
+   "id": 480245,
+   "name": "Amigo Cinnamoroll",
+   "slot": "capa",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "Também habilita [Para Prontera] nv.1.",
+   "raceOnly": null,
+   "view": 153,
+   "dp": "https://www.divine-pride.net/database/item/480245",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Amigo+Cinnamoroll"
+  },
+  {
+   "id": 20842,
+   "name": "Bolsa Física do Antonio",
+   "slot": "capa",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": "10% até o nv.99; 4% do nv.100 em diante.",
+   "raceOnly": null,
+   "view": 13,
+   "dp": "https://www.divine-pride.net/database/item/20842",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bolsa+F%C3%ADsica+do+Antonio"
+  },
+  {
+   "id": 20843,
+   "name": "Bolsa Certeira do Antonio",
+   "slot": "capa",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": "10% até o nv.99; 4% do nv.100 em diante.",
+   "raceOnly": null,
+   "view": 13,
+   "dp": "https://www.divine-pride.net/database/item/20843",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bolsa+Certeira+do+Antonio"
+  },
+  {
+   "id": 20844,
+   "name": "Bolsa Mágica do Antonio",
+   "slot": "capa",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": "10% até o nv.99; 4% do nv.100 em diante.",
+   "raceOnly": null,
+   "view": 13,
+   "dp": "https://www.divine-pride.net/database/item/20844",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bolsa+M%C3%A1gica+do+Antonio"
+  },
+  {
+   "id": 480278,
+   "name": "Asas de Garuda",
+   "slot": "capa",
+   "exp": {
+    "ate99": 9,
+    "de100a174": 9,
+    "nv175mais": 9
+   },
+   "caveats": "+3% a cada 4 refinos — valor considera +12. DOBRADO (18%) para linhagens de Odalisca/Arruaceiro/Monge/Mercenário.",
+   "raceOnly": null,
+   "view": 160,
+   "dp": "https://www.divine-pride.net/database/item/480278",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Asas+de+Garuda"
+  },
+  {
+   "id": 20780,
+   "name": "Manteau Esmeralda I",
+   "slot": "capa",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/20780",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Manteau+Esmeralda+I"
+  },
+  {
+   "id": 20781,
+   "name": "Manteau Esmeralda II",
+   "slot": "capa",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/20781",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Manteau+Esmeralda+II"
+  },
+  {
+   "id": 20782,
+   "name": "Sobrepeliz Esmeralda I",
+   "slot": "capa",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/20782",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Sobrepeliz+Esmeralda+I"
+  },
+  {
+   "id": 20787,
+   "name": "Sobrepeliz Esmeralda II",
+   "slot": "capa",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/20787",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Sobrepeliz+Esmeralda+II"
+  },
+  {
+   "id": 20802,
+   "name": "Mochila de Amistr Teleportiva",
+   "slot": "capa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+1% a cada 2 refinos — valor considera +10. Também DROP +1% a cada 2 refinos.",
+   "raceOnly": null,
+   "view": 4,
+   "dp": "https://www.divine-pride.net/database/item/20802",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+Teleportiva"
+  },
+  {
+   "id": 20803,
+   "name": "Mochila de Amistr Curativa",
+   "slot": "capa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+1% a cada 2 refinos — valor considera +10. Também DROP +1% a cada 2 refinos.",
+   "raceOnly": null,
+   "view": 4,
+   "dp": "https://www.divine-pride.net/database/item/20803",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+Curativa"
+  },
+  {
+   "id": 20804,
+   "name": "Mochila de Amistr Gananciosa",
+   "slot": "capa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+1% a cada 2 refinos — valor considera +10. Também DROP +1% a cada 2 refinos.",
+   "raceOnly": null,
+   "view": 4,
+   "dp": "https://www.divine-pride.net/database/item/20804",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+Gananciosa"
+  },
+  {
+   "id": 20805,
+   "name": "Mochila de Amistr Ágil",
+   "slot": "capa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+1% a cada 2 refinos — valor considera +10. Também DROP +1% a cada 2 refinos.",
+   "raceOnly": null,
+   "view": 4,
+   "dp": "https://www.divine-pride.net/database/item/20805",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+%C3%81gil"
+  },
+  {
+   "id": 20806,
+   "name": "Mochila de Amistr Explosiva",
+   "slot": "capa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+1% a cada 2 refinos — valor considera +10. Também DROP +1% a cada 2 refinos.",
+   "raceOnly": null,
+   "view": 4,
+   "dp": "https://www.divine-pride.net/database/item/20806",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+Explosiva"
+  },
+  {
+   "id": 20807,
+   "name": "Mochila de Amistr Vigorosa",
+   "slot": "capa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+1% a cada 2 refinos — valor considera +10. Também DROP +1% a cada 2 refinos.",
+   "raceOnly": null,
+   "view": 4,
+   "dp": "https://www.divine-pride.net/database/item/20807",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+Vigorosa"
+  },
+  {
+   "id": 20808,
+   "name": "Mochila de Amistr Reveladora",
+   "slot": "capa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+1% a cada 2 refinos — valor considera +10. Também DROP +1% a cada 2 refinos.",
+   "raceOnly": null,
+   "view": 4,
+   "dp": "https://www.divine-pride.net/database/item/20808",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+Reveladora"
+  },
+  {
+   "id": 20809,
+   "name": "Mochila de Amistr Concentrada",
+   "slot": "capa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+1% a cada 2 refinos — valor considera +10. Também DROP +1% a cada 2 refinos.",
+   "raceOnly": null,
+   "view": 4,
+   "dp": "https://www.divine-pride.net/database/item/20809",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+Concentrada"
+  },
+  {
+   "id": 20811,
+   "name": "Mochila de Amistr Furtiva",
+   "slot": "capa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+1% a cada 2 refinos — valor considera +10. Também DROP +1% a cada 2 refinos.",
+   "raceOnly": null,
+   "view": 4,
+   "dp": "https://www.divine-pride.net/database/item/20811",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+Furtiva"
+  },
+  {
+   "id": 22101,
+   "name": "Botas do ArchAngeling",
+   "slot": "calcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — habilita +5% no conjunto com Super Óculos Poring.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/22101",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Botas+do+ArchAngeling"
+  },
+  {
+   "id": 22078,
+   "name": "Bota Esmeralda FOR",
+   "slot": "calcado",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/22078",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bota+Esmeralda+FOR"
+  },
+  {
+   "id": 22079,
+   "name": "Bota Esmeralda AGI",
+   "slot": "calcado",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/22079",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bota+Esmeralda+AGI"
+  },
+  {
+   "id": 22080,
+   "name": "Sapato Esmeralda DES",
+   "slot": "calcado",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/22080",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Sapato+Esmeralda+DES"
+  },
+  {
+   "id": 22081,
+   "name": "Sapato Esmeralda INT",
+   "slot": "calcado",
+   "exp": {
+    "ate99": 4,
+    "de100a174": 4,
+    "nv175mais": 4
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/22081",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Sapato+Esmeralda+INT"
+  },
+  {
+   "id": 28439,
+   "name": "Ventilador Portátil",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Também All atributos +1.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28439",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Ventilador+Port%C3%A1til"
+  },
+  {
+   "id": 28440,
+   "name": "Ventilador Quebrado",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28440",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Ventilador+Quebrado"
+  },
+  {
+   "id": 2984,
+   "name": "Luvas de Caça",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "+5% adicional por raça com a carta racial correspondente no calçado. Resistência a todas as raças -5%.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2984",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Luvas+de+Ca%C3%A7a"
+  },
+  {
+   "id": 28374,
+   "name": "Anel Cauda de Gato",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Bônus ANULADO no nv.51+. Intransferível.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28374",
+   "market": null
+  },
+  {
+   "id": 2665,
+   "name": "Anel do Exorcismo",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": "Morto-Vivo e Demônio",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2665",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Anel+do+Exorcismo"
+  },
+  {
+   "id": 28447,
+   "name": "Anel Forte do Éden III",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28447",
+   "market": null
+  },
+  {
+   "id": 28448,
+   "name": "Colar Forte do Éden III",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28448",
+   "market": null
+  },
+  {
+   "id": 28449,
+   "name": "Anel Forte do Éden IV",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28449",
+   "market": null
+  },
+  {
+   "id": 28450,
+   "name": "Colar Forte do Éden IV",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28450",
+   "market": null
+  },
+  {
+   "id": 28451,
+   "name": "Anel Forte do Éden V",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28451",
+   "market": null
+  },
+  {
+   "id": 28452,
+   "name": "Colar Forte do Éden V",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28452",
+   "market": null
+  },
+  {
+   "id": 28457,
+   "name": "Anel Mágico do Éden III",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28457",
+   "market": null
+  },
+  {
+   "id": 28458,
+   "name": "Colar Mágico do Éden III",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28458",
+   "market": null
+  },
+  {
+   "id": 28459,
+   "name": "Anel Mágico do Éden IV",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28459",
+   "market": null
+  },
+  {
+   "id": 28460,
+   "name": "Colar Mágico do Éden IV",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28460",
+   "market": null
+  },
+  {
+   "id": 28461,
+   "name": "Anel Mágico do Éden V",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28461",
+   "market": null
+  },
+  {
+   "id": 28462,
+   "name": "Colar Mágico do Éden V",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28462",
+   "market": null
+  },
+  {
+   "id": 28467,
+   "name": "Anel Ágil do Éden III",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28467",
+   "market": null
+  },
+  {
+   "id": 28468,
+   "name": "Colar Ágil do Éden III",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28468",
+   "market": null
+  },
+  {
+   "id": 28469,
+   "name": "Anel Ágil do Éden IV",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28469",
+   "market": null
+  },
+  {
+   "id": 28470,
+   "name": "Colar Ágil do Éden IV",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28470",
+   "market": null
+  },
+  {
+   "id": 28471,
+   "name": "Anel Ágil do Éden V",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28471",
+   "market": null
+  },
+  {
+   "id": 28472,
+   "name": "Colar Ágil do Éden V",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28472",
+   "market": null
+  },
+  {
+   "id": 28477,
+   "name": "Anel Vital do Éden III",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28477",
+   "market": null
+  },
+  {
+   "id": 28478,
+   "name": "Colar Vital do Éden III",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28478",
+   "market": null
+  },
+  {
+   "id": 28479,
+   "name": "Anel Vital do Éden IV",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28479",
+   "market": null
+  },
+  {
+   "id": 28480,
+   "name": "Colar Vital do Éden IV",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28480",
+   "market": null
+  },
+  {
+   "id": 28481,
+   "name": "Anel Vital do Éden V",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28481",
+   "market": null
+  },
+  {
+   "id": 28482,
+   "name": "Colar Vital do Éden V",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Equipamento do Éden — não comercializável.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/28482",
+   "market": null
+  },
+  {
+   "id": 2753,
+   "name": "[Aluguel] Anel do Caçador Veterano",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Amorfo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2753",
+   "market": null
+  },
+  {
+   "id": 2754,
+   "name": "[Aluguel] Anel Caçador de Morto-Vivo",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Morto-Vivo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2754",
+   "market": null
+  },
+  {
+   "id": 2755,
+   "name": "[Aluguel] Anel do Ganhador",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Bruto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2755",
+   "market": null
+  },
+  {
+   "id": 2756,
+   "name": "[Aluguel] Anel do Devastador",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Planta",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2756",
+   "market": null
+  },
+  {
+   "id": 2757,
+   "name": "[Aluguel] Anel do Colecionador de Insetos",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Inseto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2757",
+   "market": null
+  },
+  {
+   "id": 2758,
+   "name": "[Aluguel] Anel do Pescador",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Peixe",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2758",
+   "market": null
+  },
+  {
+   "id": 2759,
+   "name": "[Aluguel] Anel do Exorcista",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Demônio",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2759",
+   "market": null
+  },
+  {
+   "id": 2760,
+   "name": "[Aluguel] Anel do Açougueiro",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Humanoide",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2760",
+   "market": null
+  },
+  {
+   "id": 2761,
+   "name": "[Aluguel] Anel do Anjo Caído",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Anjo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2761",
+   "market": null
+  },
+  {
+   "id": 2762,
+   "name": "[Aluguel] Anel do Caçador de Dragões",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Dragão",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2762",
+   "market": null
+  },
+  {
+   "id": 24770,
+   "name": "Manopla Sombria de EXP",
+   "slot": "sombrioArma",
+   "exp": {
+    "ate99": 30,
+    "de100a174": 30,
+    "nv175mais": 20
+   },
+   "caveats": "Valores para refino +10: base 20% (nv.<=174) / 10% (nv.175+), +1% a cada 2 refinos, +5% adicional no +10.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24770",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Manopla+Sombria+de+EXP"
+  },
+  {
+   "id": 24683,
+   "name": "Escudo Sombrio de EXP",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 30,
+    "de100a174": 30,
+    "nv175mais": 20
+   },
+   "caveats": "Valores para refino +10: base 20% (-10% no nv.175+), +1% a cada 2 refinos, +5% no +10.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24683",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+de+EXP"
+  },
+  {
+   "id": 24211,
+   "name": "Escudo Sombrio do Iniciante",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Nv. máx. 49. +1% por refino (valor considera +10). Conjunto com a Greva: +10% (+10% se soma dos refinos >=15).",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24211",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Iniciante"
+  },
+  {
+   "id": 24213,
+   "name": "Escudo Sombrio do Novato",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Faixa de nível intermediária (ver DP). +1% por refino (valor p/ +10). Conjunto com a Greva: +5% (+5% c/ refinos).",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24213",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Novato"
+  },
+  {
+   "id": 24215,
+   "name": "Escudo Sombrio Avançado",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 0
+   },
+   "caveats": "Faixa de nível (ver DP). +1% por refino (valor p/ +10). Conjunto com a Greva: +2% (+2% c/ refinos).",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24215",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+Avan%C3%A7ado"
+  },
+  {
+   "id": 24209,
+   "name": "Escudo Sombrio do Perito",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Nv. 150-175. +1% a cada 4 refinos (valor p/ +8). Conjunto com a Greva: +1% (+1% c/ refinos).",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24209",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Perito"
+  },
+  {
+   "id": 24342,
+   "name": "Escudo Sombrio Racial",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% no conjunto com a Greva Sombria Racial.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24342",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+Racial"
+  },
+  {
+   "id": 24210,
+   "name": "Greva Sombria do Iniciante",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — parceiro de conjunto do Escudo Sombrio do Iniciante.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24210",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Iniciante"
+  },
+  {
+   "id": 24212,
+   "name": "Greva Sombria do Novato",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — parceiro de conjunto do Escudo Sombrio do Novato.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24212",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Novato"
+  },
+  {
+   "id": 24214,
+   "name": "Greva Sombria Avançada",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — parceiro de conjunto do Escudo Sombrio Avançado.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24214",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+Avan%C3%A7ada"
+  },
+  {
+   "id": 24208,
+   "name": "Greva Sombria do Perito",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Nv. 150-175. +1% a cada 4 refinos (valor p/ +8).",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24208",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Perito"
+  },
+  {
+   "id": 24341,
+   "name": "Greva Sombria Racial",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% no conjunto com o Escudo Sombrio Racial.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24341",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+Racial"
+  },
+  {
+   "id": 24052,
+   "name": "Escudo Sombrio do Açougueiro",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": "Humanoide",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24052",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+A%C3%A7ougueiro"
+  },
+  {
+   "id": 24054,
+   "name": "Escudo Sombrio do Carniceiro",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": "Bruto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24054",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Carniceiro"
+  },
+  {
+   "id": 24055,
+   "name": "Escudo Sombrio do Inseticida",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": "Inseto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24055",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Inseticida"
+  },
+  {
+   "id": 24056,
+   "name": "Escudo Sombrio do Pescador",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": "Peixe",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24056",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Pescador"
+  },
+  {
+   "id": 24057,
+   "name": "Escudo Sombrio do Matador",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": "Dragão",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24057",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Matador"
+  },
+  {
+   "id": 24058,
+   "name": "Escudo Sombrio do Satanista",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": "Anjo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24058",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Satanista"
+  },
+  {
+   "id": 24059,
+   "name": "Escudo Sombrio do Colecionador",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": "Amorfo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24059",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Colecionador"
+  },
+  {
+   "id": 24060,
+   "name": "Escudo Sombrio do Exorcista",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": "Morto-Vivo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24060",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Exorcista"
+  },
+  {
+   "id": 24061,
+   "name": "Escudo Sombrio do Jardineiro",
+   "slot": "sombrioEscudo",
+   "exp": {
+    "ate99": 3,
+    "de100a174": 3,
+    "nv175mais": 3
+   },
+   "caveats": null,
+   "raceOnly": "Planta",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24061",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Escudo+Sombrio+do+Jardineiro"
+  },
+  {
+   "id": 4151,
+   "name": "Carta Gajomart",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Planta",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4151",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Gajomart"
+  },
+  {
+   "id": 4164,
+   "name": "Carta Gullinbursti",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Peixe",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4164",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Gullinbursti"
+  },
+  {
+   "id": 4199,
+   "name": "Carta Tritão",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": "Bruto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4199",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Trit%C3%A3o"
+  },
+  {
+   "id": 4204,
+   "name": "Carta Diabinho",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Bruto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4204",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Diabinho"
+  },
+  {
+   "id": 4221,
+   "name": "Carta Esqueleto General",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Inseto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4221",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Esqueleto+General"
+  },
+  {
+   "id": 4235,
+   "name": "Carta Cookie Natalino",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Anjo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4235",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Cookie+Natalino"
+  },
+  {
+   "id": 4239,
+   "name": "Carta Mão de Ferro",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Amorfo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4239",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+M%C3%A3o+de+Ferro"
+  },
+  {
+   "id": 4249,
+   "name": "Carta Verme Ancião",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Demônio",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4249",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Verme+Anci%C3%A3o"
+  },
+  {
+   "id": 4267,
+   "name": "Carta Estrondo",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Dragão",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4267",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Estrondo"
+  },
+  {
+   "id": 4275,
+   "name": "Carta Zumbi Prisioneiro",
+   "slot": "cartaCalcado",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Morto-Vivo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4275",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Zumbi+Prisioneiro"
+  },
+  {
+   "id": 4245,
+   "name": "Carta Am Mut",
+   "slot": "cartaArmadura",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "+5% adicional para a raça no conjunto com Luvas de Caça (acessório).",
+   "raceOnly": "Humanoide",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4245",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Am+Mut"
+  },
+  {
+   "id": 4280,
+   "name": "Carta Planta Carnívora",
+   "slot": "cartaArmadura",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": null,
+   "raceOnly": "Demônio e Morto-Vivo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/4280",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Planta+Carn%C3%ADvora"
+  },
+  {
+   "id": 31518,
+   "name": "[Visual] Pipocas Saltitantes",
+   "slot": "visualTopo",
+   "exp": {
+    "ate99": 20,
+    "de100a174": 20,
+    "nv175mais": 20
+   },
+   "caveats": "Efeito somente durante o evento das Pipocas.",
+   "raceOnly": null,
+   "view": 1763,
+   "dp": "https://www.divine-pride.net/database/item/31518",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Pipocas+Saltitantes"
+  },
+  {
+   "id": 31736,
+   "name": "[Visual] Peruca de Pipoca",
+   "slot": "visualTopo",
+   "exp": {
+    "ate99": 20,
+    "de100a174": 20,
+    "nv175mais": 20
+   },
+   "caveats": "Efeito somente durante o evento das Pipocas.",
+   "raceOnly": null,
+   "view": 1895,
+   "dp": "https://www.divine-pride.net/database/item/31736",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Peruca+de+Pipoca"
+  },
+  {
+   "id": 400799,
+   "name": "[Visual] Capuz de Kumamon",
+   "slot": "visualTopo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Efeitos serão deletados em 21/07/2026. +5% adicional no conjunto com a Mochila de Kumamon.",
+   "raceOnly": null,
+   "view": 2675,
+   "dp": "https://www.divine-pride.net/database/item/400799",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Capuz+de+Kumamon"
+  },
+  {
+   "id": 19533,
+   "name": "[Visual] Touca de Esporo",
+   "slot": "visualTopo",
+   "exp": {
+    "ate99": 1,
+    "de100a174": 1,
+    "nv175mais": 1
+   },
+   "caveats": null,
+   "raceOnly": null,
+   "view": 114,
+   "dp": "https://www.divine-pride.net/database/item/19533",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Touca+de+Esporo"
+  },
+  {
+   "id": 410069,
+   "name": "[Visual] Pipoquinho",
+   "slot": "visualMeio",
+   "exp": {
+    "ate99": 20,
+    "de100a174": 20,
+    "nv175mais": 20
+   },
+   "caveats": "Efeito somente durante o evento das Pipocas.",
+   "raceOnly": null,
+   "view": 2142,
+   "dp": "https://www.divine-pride.net/database/item/410069",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Pipoquinho"
+  },
+  {
+   "id": 480559,
+   "name": "[Visual] Mochila de Kumamon",
+   "slot": "visualCapa",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Efeitos serão deletados em 21/07/2026.",
+   "raceOnly": null,
+   "view": 262,
+   "dp": "https://www.divine-pride.net/database/item/480559",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Mochila+de+Kumamon"
+  },
+  {
+   "id": 25171,
+   "name": "Pedra de EXP +2% (Topo)",
+   "slot": "pedraTopo",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Encantamento de visual (Loja Fashion). +3% adicional com as 3 pedras (Topo+Meio+Baixo). Encanta como ids 29159/29145/29027.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/25171",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Pedra+de+EXP+%2B2%25+%28Topo%29"
+  },
+  {
+   "id": 25141,
+   "name": "Pedra de EXP +2% (Meio)",
+   "slot": "pedraMeio",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Encantamento de visual (Loja Fashion).",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/25141",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Pedra+de+EXP+%2B2%25+%28Meio%29"
+  },
+  {
+   "id": 25015,
+   "name": "Pedra de EXP +2% (Baixo)",
+   "slot": "pedraBaixo",
+   "exp": {
+    "ate99": 2,
+    "de100a174": 2,
+    "nv175mais": 2
+   },
+   "caveats": "Encantamento de visual (Loja Fashion).",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/25015",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Pedra+de+EXP+%2B2%25+%28Baixo%29"
+  },
+  {
+   "id": 15088,
+   "name": "Uniforme Escolar",
+   "slot": "armadura",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — parceiro de conjunto dos Bonés do Aluno.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/15088",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Uniforme+Escolar"
+  },
+  {
+   "id": 18818,
+   "name": "Lápis Vermelho",
+   "slot": "baixo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — parceiro de conjunto dos Bonés do Aluno.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/18818",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=L%C3%A1pis+Vermelho"
+  },
+  {
+   "id": 2254,
+   "name": "Asas de Anjo",
+   "slot": "topo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — parceiro de conjunto do Pombo Revelador.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/2254",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Asas+de+Anjo"
+  },
+  {
+   "id": 5007,
+   "name": "Coroa do Líder",
+   "slot": "topo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — parceiro de conjunto do Corvo.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/5007",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Coroa+do+L%C3%ADder"
+  }
+ ],
+ "sets": [
+  {
+   "items": [
+    19117,
+    22101
+   ],
+   "bonus": 5,
+   "note": "Super Óculos Poring + Botas do ArchAngeling"
+  },
+  {
+   "items": [
+    19118,
+    22101
+   ],
+   "bonus": 4,
+   "note": "Super Óculos Poring (variante) + Botas do ArchAngeling"
+  },
+  {
+   "items": [
+    400799,
+    480559
+   ],
+   "bonus": 5,
+   "note": "Capuz de Kumamon + Mochila de Kumamon (evento)"
+  },
+  {
+   "items": [
+    25171,
+    25141,
+    25015
+   ],
+   "bonus": 3,
+   "note": "Pedras de EXP Topo+Meio+Baixo"
+  },
+  {
+   "items": [
+    24211,
+    24210
+   ],
+   "bonus": 20,
+   "note": "Escudo+Greva Sombria do Iniciante (10% + 10% se soma dos refinos >=15); nv. máx. 49",
+   "bands": [
+    "ate99"
+   ]
+  },
+  {
+   "items": [
+    24213,
+    24212
+   ],
+   "bonus": 10,
+   "note": "Escudo+Greva Sombria do Novato (5% + 5% c/ refinos)",
+   "bands": [
+    "ate99"
+   ]
+  },
+  {
+   "items": [
+    24215,
+    24214
+   ],
+   "bonus": 4,
+   "note": "Escudo+Greva Sombria Avançada (2% + 2% c/ refinos)",
+   "bands": [
+    "ate99",
+    "de100a174"
+   ]
+  },
+  {
+   "items": [
+    24209,
+    24208
+   ],
+   "bonus": 2,
+   "note": "Escudo+Greva Sombria do Perito (1% + 1% c/ refinos); nv.150-175",
+   "bands": [
+    "de100a174",
+    "nv175mais"
+   ]
+  },
+  {
+   "items": [
+    24342,
+    24341
+   ],
+   "bonus": 3,
+   "note": "Escudo+Greva Sombria Racial"
+  },
+  {
+   "items": [
+    2984,
+    4151
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Gajomart (somente raça Planta)"
+  },
+  {
+   "items": [
+    2984,
+    4164
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Gullinbursti (somente raça Peixe)"
+  },
+  {
+   "items": [
+    2984,
+    4204
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Diabinho (somente raça Bruto)"
+  },
+  {
+   "items": [
+    2984,
+    4221
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Esqueleto General (somente raça Inseto)"
+  },
+  {
+   "items": [
+    2984,
+    4235
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Cookie Natalino (somente raça Anjo)"
+  },
+  {
+   "items": [
+    2984,
+    4239
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Mão de Ferro (somente raça Amorfo)"
+  },
+  {
+   "items": [
+    2984,
+    4249
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Verme Ancião (somente raça Demônio)"
+  },
+  {
+   "items": [
+    2984,
+    4267
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Estrondo (somente raça Dragão)"
+  },
+  {
+   "items": [
+    2984,
+    4275
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Zumbi Prisioneiro (somente raça Morto-Vivo)"
+  },
+  {
+   "items": [
+    2984,
+    4245
+   ],
+   "bonus": 5,
+   "note": "Luvas de Caça + Carta Am Mut (somente raça Humanoide)"
+  },
+  {
+   "items": [
+    18816,
+    15088,
+    18818
+   ],
+   "bonus": 5,
+   "note": "Boné do Aluno Exemplar + Uniforme Escolar + Lápis Vermelho"
+  },
+  {
+   "items": [
+    18817,
+    15088,
+    18818
+   ],
+   "bonus": 5,
+   "note": "Boné do Aluno Travesso + Uniforme Escolar + Lápis Vermelho"
+  },
+  {
+   "items": [
+    18912,
+    2254
+   ],
+   "bonus": 5,
+   "note": "Pombo Revelador + Asas de Anjo"
+  },
+  {
+   "items": [
+    18913,
+    5007
+   ],
+   "bonus": 5,
+   "note": "Corvo + Coroa do Líder"
+  }
+ ]
+}

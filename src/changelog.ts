@@ -1,0 +1,39 @@
+// Changelog voltado ao usuário, em pt-BR — mantenha as entradas curtas e sem
+// jargão técnico. A PRIMEIRA entrada é a versão atual (usada no rótulo do rodapé
+// e no anúncio automático de novidades no Discord após o deploy).
+//
+// O registro técnico detalhado fica em CHANGELOG.md, na raiz do projeto.
+
+export type ChangelogEntry = {
+  version: string;
+  date: string; // AAAA-MM-DD
+  changes: string[];
+  /** Crédito de quem reportou/ajudou — destacado no fim da entrada. */
+  credit?: string;
+};
+
+export const CHANGELOG: ChangelogEntry[] = [
+  {
+    version: "0.3.0",
+    date: "2026-07-09",
+    changes: [
+      "Nova calculadora: Conjunto de EXP! Monte o equipamento que dá mais +% de EXP ao derrotar monstros, veja o total por faixa de nível, os bônus de conjunto e uma prévia do personagem.",
+    ],
+  },
+  {
+    version: "0.2.0",
+    date: "2026-05-08",
+    changes: [
+      "Nova calculadora do Martelo de Refino Sombrio: descubra quantos martelos você precisa para alcançar o refino desejado.",
+    ],
+  },
+  {
+    version: "0.1.0",
+    date: "2026-05-07",
+    changes: [
+      "Lançamento do RagCalc com as calculadoras de encantamento de insígnia do Chapéu Memorável e da Diadema Temporal.",
+    ],
+  },
+];
+
+export const APP_VERSION = CHANGELOG[0]!.version;
