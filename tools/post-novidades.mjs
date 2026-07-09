@@ -28,7 +28,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
 const PROJECT_NAME = "RagCalc";
-const SITE_URL = "https://ragcalc.web.app/";
+const SITE_URL = "https://calc.latam-tools.com.br/";
 const DEFAULT_CHANNEL_ID = "1524025278471471295"; // #novidades (shared LATAM tools)
 const EMBED_COLOR = 0xffb84d; // --accent (orange), matches the app theme
 const DISCORD_DESC_LIMIT = 4096;
