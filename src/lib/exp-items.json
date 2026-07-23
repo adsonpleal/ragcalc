@@ -301,6 +301,21 @@
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=M%C3%A1scara+de+Mergulho"
   },
   {
+   "id": 19275,
+   "name": "[Aluguel] Snorkel",
+   "slot": "meio",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Item de aluguel — não comercializável.",
+   "raceOnly": "Peixe",
+   "view": 400,
+   "dp": "https://www.divine-pride.net/database/item/19275",
+   "market": null
+  },
+  {
    "id": 5796,
    "name": "[Aluguel] Disfarce 1",
    "slot": "baixo",

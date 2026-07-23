@@ -6,6 +6,15 @@ o versionamento é informal enquanto o projeto está pré-1.0. O texto voltado a
 usuário (e a fonte do anúncio automático no Discord após o deploy) fica em
 `src/changelog.ts`.
 
+## [0.3.1] — 2026-07-23
+
+### Adicionado
+
+- **[Aluguel] Snorkel** (item 19275) na Calculadora de Conjunto de EXP —
+  chapéu de espaço médio que dá EXP +5% contra a raça Peixe. Detectado na
+  atualização do cliente (GRF) extraindo os itens com bônus de EXP do
+  `iteminfo_new.lub`.
+
 ## [0.3.0] — 2026-07-09
 
 ### Adicionado

@@ -14,6 +14,13 @@ export type ChangelogEntry = {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: "0.3.1",
+    date: "2026-07-23",
+    changes: [
+      "Novo item na calculadora de Conjunto de EXP: Snorkel (Aluguel), um chapéu de espaço médio que dá +5% de EXP contra monstros da raça Peixe.",
+    ],
+  },
+  {
     version: "0.3.0",
     date: "2026-07-09",
     changes: [
