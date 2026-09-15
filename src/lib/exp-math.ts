@@ -1,8 +1,10 @@
-import { type Band, type ExpItem, type ExpSet, ITEM_BY_ID, SETS } from './exp-data';
+import { type Band, type ExpItem, type ExpSet, type Grade, ITEM_BY_ID, SETS } from './exp-data';
 
 export interface ItemContribution {
   item: ExpItem;
   value: number;
+  // An enchant whose base item is not equipped: listed, but worth nothing.
+  inactive: boolean;
 }
 
 export interface SetContribution {
@@ -25,14 +27,17 @@ export function computeBreakdown(
   selectedIds: ReadonlyArray<number>,
   band: Band,
   sets: ReadonlyArray<ExpSet> = SETS,
+  grades: ReadonlyMap<number, Grade> = new Map(),
 ): ExpBreakdown {
+  const uniqueIds = new Set(selectedIds);
   const items: ItemContribution[] = [];
   for (const id of selectedIds) {
     const item = ITEM_BY_ID.get(id);
-    if (item) items.push({ item, value: item.exp[band] });
+    if (!item) continue;
+    const inactive = !requirementMet(item, uniqueIds);
+    items.push({ item, value: inactive ? 0 : itemExp(item, band, grades.get(id)), inactive });
   }
 
-  const uniqueIds = new Set(selectedIds);
   const setContribs: SetContribution[] = [];
   for (const set of sets) {
     if (set.bands && !set.bands.includes(band)) continue;
@@ -52,10 +57,30 @@ export function computeBreakdown(
   };
 }
 
+const GRADE_TIERS: ReadonlyArray<'D' | 'C' | 'B'> = ['D', 'C', 'B'];
+const GRADE_RANK: Record<Grade, number> = { D: 1, C: 2, B: 3, A: 4 };
+
+// An item's EXP in a band at a given grade. Grade bonuses only add to a band
+// where the item already counts: a 0 there means it cannot be used at all.
+export function itemExp(item: ExpItem, band: Band, grade?: Grade | null): number {
+  const base = item.exp[band];
+  if (!grade || !item.gradeBonus || base === 0) return base;
+  const bonus = item.gradeBonus;
+  return GRADE_TIERS.reduce(
+    (sum, tier) => (GRADE_RANK[grade] >= GRADE_RANK[tier] ? sum + bonus[tier] : sum),
+    base,
+  );
+}
+
+export function requirementMet(item: ExpItem, equipped: ReadonlySet<number>): boolean {
+  return !item.requires || item.requires.some((id) => equipped.has(id));
+}
+
 export function totalExp(
   selectedIds: ReadonlyArray<number>,
   band: Band,
   sets: ReadonlyArray<ExpSet> = SETS,
+  grades: ReadonlyMap<number, Grade> = new Map(),
 ): number {
-  return computeBreakdown(selectedIds, band, sets).total;
+  return computeBreakdown(selectedIds, band, sets, grades).total;
 }

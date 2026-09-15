@@ -6,6 +6,94 @@ o versionamento é informal enquanto o projeto está pré-1.0. O texto voltado a
 usuário (e a fonte do anúncio automático no Discord após o deploy) fica em
 `src/changelog.ts`.
 
+## [0.3.6] — 2026-09-15
+
+### Adicionado
+
+- **Descrição do item ao passar o mouse**, no molde do popover do
+  latam-ro-calc: cartão branco (as cores `^RRGGBB` do cliente são pensadas para
+  fundo claro), largura de leitura (`min(90vw, 34rem)`), rolagem própria acima
+  de 85vh e continua aberto com o ponteiro em cima, para rolar e copiar.
+  Aparece ao lado do alvo (direita, senão esquerda, senão abaixo) e sempre dentro
+  da janela; 350 ms para abrir, 150 ms de folga para atravessar até ele, Esc
+  fecha. Desligado em telas sem hover. Gatilho é qualquer `[data-desc-id]`
+  (slot preenchido, linha do seletor, Lista de Equipamentos, tabelas), por
+  delegação no root, porque a tela re-renderiza com `innerHTML`.
+  - `src/components/item-tooltip.ts` (popover), `src/lib/item-desc.ts`
+    (`formatItemDescription`: cores, `<NAVI>` sem coordenadas, escape de HTML).
+  - `src/lib/exp-descriptions.json`, gerado por
+    **`tools/sync-item-descriptions.mjs`** a partir de `/raw/items.json` do
+    ragassets, só com os ids de `exp-items.json`. Carregado por `import()`:
+    vira um chunk próprio (94 kB, 12 kB gzip) que só baixa no primeiro hover.
+  - 171 de 177 itens têm texto; os 6 sem descrição no cliente mostram um aviso.
+  - A skill `sync-with-ragassets` passa a cobrir esse arquivo.
+- **Itens da colaboração Baby Shark** no Conjunto de EXP, que chegaram na
+  atualização do cliente de 2026-09-14: Bolsa do Baby Shark (480824, capa, 10%),
+  [Visual] Cabeça do Baby Shark (401367, 5%), Carta Baby Shark (300834) e Carta
+  Família Tubarão (300835), 15% cada. Os três últimos trazem o bônus sob
+  `[Durante o Evento]` no cliente, então saem quando o evento acabar, como os do
+  Kumamon e das Pipocas.
+- **Pool `cartaCapa`** (slot "Carta (Capa)"), sob a Capa na grade principal.
+  Permalinks são por id, então links antigos não mudam.
+- **Ventilador Portátil-LT** (490374) e **Ventilador Quebrado-LT** (490375):
+  10% até o nv. 174, 5% no 175+, nível necessário 100 (então 0 na faixa ≤99).
+  Os ids já existiam, mas até esta atualização a descrição do cliente era só o
+  texto de ambientação, sem efeitos.
+
+- **Encantamentos que dependem do item-base.** Campo opcional `requires` em
+  `ExpItem` (ids aceitos como base); `computeBreakdown` zera o item e marca
+  `inactive` quando nenhum deles está equipado, e a tela mostra +0% com o
+  motivo. Dois pools novos, como sub-slots na grade principal:
+  - `encantoBaixo` — 3º slot dos 10 Balões Poring (19143, 19146–19154; não os
+    Balões da Família Poring): Mestre dos Mestres (311004, +5%) e Mestre
+    <raça> (310994–311003, +5% contra a raça).
+  - `encantoTopo` — 4º slot do **Chapéu de Oficial-LT** (400445, adicionado ao
+    Topo com 0% próprio): Medalha de Experiência (312406, 10% até o nv. 174 / 4%
+    no 175+) e Medalha de <raça> (312407–312416, 15% / 7%). Nv. necessário 100,
+    então 0 na faixa ≤99.
+
+  Tabelas de encanto e chances vêm das predefinições `Balões_Poring` e
+  `Chapeu_Oficial` do bROWiki; os valores, das descrições do cliente.
+- **Seletor de grau** no slot de encanto cujo item tem `gradeBonus` (hoje, as
+  Medalhas do Chapéu de Oficial-LT). `exp` guarda o valor sem grau e
+  `gradeBonus` os adicionais de "Grau X ou mais", que se somam: Medalha de
+  Experiência +1/+2/+3 (16% no Grau B até o nv. 174), Medalhas de raça +1/+3/+5
+  (24%). Grau A recebe o mesmo que B, porque o cliente não tem faixa própria
+  para ele. O grau não soma numa faixa em que o item vale 0 (≤99, o chapéu
+  exige nv. 100). `itemExp()` em `exp-math.ts` faz a conta; `computeBreakdown`
+  e `totalExp` recebem os graus por id de item. O grau vai no permalink como
+  `gd=encantoTopo.B`, por slot, então trocar de Medalha mantém o grau do chapéu.
+
+### Removido
+
+- **Amigo Cinnamoroll** (480245, capa, 10%). O item ainda não existe no LATAM: o
+  cliente não tem nome nem descrição para ele (`name: null` em `/raw/items.json`)
+  e o mercado nunca o viu. Não fazia parte de nenhum conjunto. Volta quando o
+  cliente trouxer o item.
+
+### Corrigido
+
+- **Setas de girar o personagem invertidas.** `bodyDir` sobe no sentido oposto
+  ao que as setas mostravam; os passos de ← e → foram trocados (`data-rot`).
+
+Achados conferindo os 149 itens contra `/raw/items.json` do ragassets:
+
+- **Carta Am Mut** (4245) estava em `cartaArmadura`; o cliente diz "Equipa em:
+  Calçado".
+- **Escudo/Greva Sombria do Novato** (24213/24212): +1% a cada **2** refinos,
+  não por refino — 5% no +10, não 10%.
+- **Escudo/Greva Sombria Avançada** (24215/24214): +1% a cada **3** refinos (3%
+  no +10) e nível 100–149, então a faixa ≤99 passa a 0, e o conjunto também
+  deixa de valer nela.
+- **Grevas do Iniciante, do Novato e Avançada** estavam com 0% ("sem EXP
+  próprio"); cada uma tem o mesmo bônus por refino do escudo do par.
+- `view` preenchido onde o cliente tem sprite e o arquivo tinha `null`:
+  Protetor das Marés e Protetor de Preamar (870), Lápis Vermelho (931), Asas de
+  Anjo (38), Coroa do Líder (93). Os parceiros de conjunto passam a aparecer na
+  prévia do personagem.
+- Ressalvas do Elmo do Dragão e do Protetor de Preamar reescritas com o texto do
+  cliente (a posição "a confirmar" é Topo).
+
 ## [0.3.5] — 2026-08-18
 
 ### Adicionado

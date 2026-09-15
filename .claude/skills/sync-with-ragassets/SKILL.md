@@ -1,6 +1,6 @@
 ---
 name: sync-with-ragassets
-description: Regenerate src/lib/classes.json (the class picker's list) from ragassets' /raw/classes.json. Use after a LATAM client update, when a class is missing from the picker, or when a class name or icon looks wrong.
+description: Regenerate the tables this app copies from ragassets — src/lib/classes.json (class picker) from /raw/classes.json and src/lib/exp-descriptions.json (item hover descriptions) from /raw/items.json. Use after a LATAM client update, when a class is missing or misnamed in the picker, when an item's hover description is missing or stale, or after adding items to src/lib/exp-items.json.
 ---
 
 # Sync the class list from ragassets
@@ -93,3 +93,35 @@ Two tests back this up, both offline:
 A name or class change here is user-visible: add a changelog entry
 (`src/changelog.ts` **and** `CHANGELOG.md`) and bump the version, or the deploy
 ships silently.
+
+# Sync item descriptions
+
+`src/lib/exp-descriptions.json` holds the in-game description of every item in
+`src/lib/exp-items.json`, for the hover popover (`src/components/item-tooltip.ts`).
+Like `classes.json` it is **generated, never edited by hand**, from
+<https://assets.latam-tools.com.br/raw/items.json>.
+
+```bash
+node tools/sync-item-descriptions.mjs
+```
+
+Same `--input` / `--url` / `--out` options as the class script.
+
+**Run it after every change to `exp-items.json`** — a new item has no popover
+text until you do, and `src/lib/item-desc.test.ts` fails if the file still holds
+a removed item. It is also the quickest check of the curated list after a client
+update: the script reports
+
+- items the client has **no text for** (they are left out, and the popover says
+  so). Today that is 6 items that do not seem to exist in LATAM at all; a new
+  one in that list usually means a wrong id.
+- items the client **names differently** than `exp-items.json` — rename them
+  there.
+
+It does not check EXP values: those are curated from the description text, so
+read the diff of `exp-descriptions.json` for items whose numbers moved.
+
+The file keeps the raw client text; `formatItemDescription()` in
+`src/lib/item-desc.ts` turns `^RRGGBB` codes into colors and drops `<NAVI>`
+coordinates. It is loaded with a dynamic import, so its ~100 kB only reach
+people who hover an item.

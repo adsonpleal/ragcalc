@@ -161,7 +161,7 @@
    },
    "caveats": null,
    "raceOnly": "Peixe e Humanoide",
-   "view": null,
+   "view": 870,
    "dp": "https://www.divine-pride.net/database/item/400097",
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Protetor+das+Mar%C3%A9s"
   },
@@ -189,7 +189,7 @@
     "de100a174": 8,
     "nv175mais": 8
    },
-   "caveats": "+3% base, +5% adicional (ver condição no DP).",
+   "caveats": "+3% no refino +7 e +5% adicional no +9 — valor considera +9.",
    "raceOnly": "Dragão",
    "view": 464,
    "dp": "https://www.divine-pride.net/database/item/5467",
@@ -204,11 +204,26 @@
     "de100a174": 20,
     "nv175mais": 20
    },
-   "caveats": "Posição a confirmar no divine-pride.",
+   "caveats": null,
    "raceOnly": "Peixe",
-   "view": null,
+   "view": 870,
    "dp": "https://www.divine-pride.net/database/item/19026",
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Protetor+de+Preamar"
+  },
+  {
+   "id": 400445,
+   "name": "Chapéu de Oficial-LT",
+   "slot": "topo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — o 4º slot pode ser encantado com as Medalhas (Encantamento (Topo)). Nv. necessário 100.",
+   "raceOnly": null,
+   "view": 1759,
+   "dp": "https://www.divine-pride.net/database/item/400445",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Chap%C3%A9u+de+Oficial-LT"
   },
   {
    "id": 19117,
@@ -369,7 +384,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1426,
    "dp": "https://www.divine-pride.net/database/item/19143",
@@ -384,7 +399,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1430,
    "dp": "https://www.divine-pride.net/database/item/19146",
@@ -399,7 +414,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1427,
    "dp": "https://www.divine-pride.net/database/item/19147",
@@ -414,7 +429,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1428,
    "dp": "https://www.divine-pride.net/database/item/19148",
@@ -429,7 +444,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1429,
    "dp": "https://www.divine-pride.net/database/item/19149",
@@ -444,7 +459,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1431,
    "dp": "https://www.divine-pride.net/database/item/19150",
@@ -459,7 +474,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1434,
    "dp": "https://www.divine-pride.net/database/item/19151",
@@ -474,7 +489,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1435,
    "dp": "https://www.divine-pride.net/database/item/19152",
@@ -489,7 +504,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1436,
    "dp": "https://www.divine-pride.net/database/item/19153",
@@ -504,7 +519,7 @@
     "de100a174": 5,
     "nv175mais": 5
    },
-   "caveats": null,
+   "caveats": "O 3º slot pode ser encantado com Mestre dos Mestres ou Mestre <raça> (Encantamento (Baixo)).",
    "raceOnly": null,
    "view": 1437,
    "dp": "https://www.divine-pride.net/database/item/19154",
@@ -691,8 +706,8 @@
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Broquel+Esmeralda"
   },
   {
-   "id": 480245,
-   "name": "Amigo Cinnamoroll",
+   "id": 480824,
+   "name": "Bolsa do Baby Shark",
    "slot": "capa",
    "exp": {
     "ate99": 10,
@@ -701,9 +716,9 @@
    },
    "caveats": "Também habilita [Para Prontera] nv.1.",
    "raceOnly": null,
-   "view": 153,
-   "dp": "https://www.divine-pride.net/database/item/480245",
-   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Amigo+Cinnamoroll"
+   "view": 308,
+   "dp": "https://www.divine-pride.net/database/item/480824",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Bolsa+do+Baby+Shark"
   },
   {
    "id": 20842,
@@ -1064,6 +1079,36 @@
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/28440",
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Ventilador+Quebrado"
+  },
+  {
+   "id": 490374,
+   "name": "Ventilador Portátil-LT",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 10,
+    "nv175mais": 5
+   },
+   "caveats": "Acessório direito. Nv. necessário 100. 10% até o nv.174; 5% no nv.175+.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/490374",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Ventilador+Port%C3%A1til-LT"
+  },
+  {
+   "id": 490375,
+   "name": "Ventilador Quebrado-LT",
+   "slot": "acessorio",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 10,
+    "nv175mais": 5
+   },
+   "caveats": "Nv. necessário 100. 10% até o nv.174; 5% no nv.175+.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/490375",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Ventilador+Quebrado-LT"
   },
   {
    "id": 2984,
@@ -1670,11 +1715,11 @@
    "name": "Escudo Sombrio do Novato",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 10,
+    "ate99": 5,
     "de100a174": 0,
     "nv175mais": 0
    },
-   "caveats": "Faixa de nível intermediária (ver DP). +1% por refino (valor p/ +10). Conjunto com a Greva: +5% (+5% c/ refinos).",
+   "caveats": "Nv. 50-99. +1% a cada 2 refinos (valor p/ +10). Conjunto com a Greva: +5% (+5% se soma dos refinos >=15).",
    "raceOnly": null,
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24213",
@@ -1685,11 +1730,11 @@
    "name": "Escudo Sombrio Avançado",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 10,
-    "de100a174": 10,
+    "ate99": 0,
+    "de100a174": 3,
     "nv175mais": 0
    },
-   "caveats": "Faixa de nível (ver DP). +1% por refino (valor p/ +10). Conjunto com a Greva: +2% (+2% c/ refinos).",
+   "caveats": "Nv. 100-149. +1% a cada 3 refinos (valor p/ +10). Conjunto com a Greva: +2% (+2% se soma dos refinos >=15).",
    "raceOnly": null,
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24215",
@@ -1730,11 +1775,11 @@
    "name": "Greva Sombria do Iniciante",
    "slot": "sombrioCalcado",
    "exp": {
-    "ate99": 0,
+    "ate99": 10,
     "de100a174": 0,
     "nv175mais": 0
    },
-   "caveats": "Sem EXP próprio — parceiro de conjunto do Escudo Sombrio do Iniciante.",
+   "caveats": "Nv. máx. 49. +1% por refino (valor considera +10). Parceira de conjunto do Escudo Sombrio do Iniciante.",
    "raceOnly": null,
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24210",
@@ -1745,11 +1790,11 @@
    "name": "Greva Sombria do Novato",
    "slot": "sombrioCalcado",
    "exp": {
-    "ate99": 0,
+    "ate99": 5,
     "de100a174": 0,
     "nv175mais": 0
    },
-   "caveats": "Sem EXP próprio — parceiro de conjunto do Escudo Sombrio do Novato.",
+   "caveats": "Nv. 50-99. +1% a cada 2 refinos (valor p/ +10). Parceira de conjunto do Escudo Sombrio do Novato.",
    "raceOnly": null,
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24212",
@@ -1761,10 +1806,10 @@
    "slot": "sombrioCalcado",
    "exp": {
     "ate99": 0,
-    "de100a174": 0,
+    "de100a174": 3,
     "nv175mais": 0
    },
-   "caveats": "Sem EXP próprio — parceiro de conjunto do Escudo Sombrio Avançado.",
+   "caveats": "Nv. 100-149. +1% a cada 3 refinos (valor p/ +10). Parceira de conjunto do Escudo Sombrio Avançado.",
    "raceOnly": null,
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24214",
@@ -2088,7 +2133,7 @@
   {
    "id": 4245,
    "name": "Carta Am Mut",
-   "slot": "cartaArmadura",
+   "slot": "cartaCalcado",
    "exp": {
     "ate99": 10,
     "de100a174": 10,
@@ -2116,6 +2161,36 @@
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Planta+Carn%C3%ADvora"
   },
   {
+   "id": 300834,
+   "name": "Carta Baby Shark",
+   "slot": "cartaCapa",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Bônus apenas durante o evento Baby Shark.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/300834",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Baby+Shark"
+  },
+  {
+   "id": 300835,
+   "name": "Carta Família Tubarão",
+   "slot": "cartaCapa",
+   "exp": {
+    "ate99": 15,
+    "de100a174": 15,
+    "nv175mais": 15
+   },
+   "caveats": "Bônus apenas durante o evento Baby Shark.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/300835",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Fam%C3%ADlia+Tubar%C3%A3o"
+  },
+  {
    "id": 19533,
    "name": "[Visual] Touca de Esporo",
    "slot": "visualTopo",
@@ -2129,6 +2204,21 @@
    "view": 114,
    "dp": "https://www.divine-pride.net/database/item/19533",
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Touca+de+Esporo"
+  },
+  {
+   "id": 401367,
+   "name": "[Visual] Cabeça do Baby Shark",
+   "slot": "visualTopo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Bônus apenas durante o evento Baby Shark.",
+   "raceOnly": null,
+   "view": 2833,
+   "dp": "https://www.divine-pride.net/database/item/401367",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Cabe%C3%A7a+do+Baby+Shark"
   },
   {
    "id": 25171,
@@ -2176,6 +2266,556 @@
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Pedra+de+EXP+%2B2%25+%28Baixo%29"
   },
   {
+   "id": 312406,
+   "name": "Medalha de Experiência",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 10,
+    "nv175mais": 4
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +2%, Grau B ou mais +3% adicional (cumulativos: +6% no Grau B).",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312406",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 2,
+    "B": 3
+   }
+  },
+  {
+   "id": 312407,
+   "name": "Medalha de Amorfo",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Amorfo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312407",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 312408,
+   "name": "Medalha de Morto",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Morto-Vivo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312408",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 312409,
+   "name": "Medalha de Bruto",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Bruto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312409",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 312410,
+   "name": "Medalha de Planta",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Planta",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312410",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 312411,
+   "name": "Medalha de Inseto",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Inseto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312411",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 312412,
+   "name": "Medalha de Peixe",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Peixe",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312412",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 312413,
+   "name": "Medalha de Demônio",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Demônio",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312413",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 312414,
+   "name": "Medalha de Humanoide",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Humanoide",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312414",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 312415,
+   "name": "Medalha de Anjo",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Anjo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312415",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 312416,
+   "name": "Medalha de Dragão",
+   "slot": "encantoTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 15,
+    "nv175mais": 7
+   },
+   "caveats": "Encantamento do Chapéu de Oficial-LT (4º slot). Escolha o grau do chapéu no slot: Grau D ou mais +1%, Grau C ou mais +3%, Grau B ou mais +5% adicional (cumulativos: +9% no Grau B).",
+   "raceOnly": "Dragão",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/312416",
+   "market": null,
+   "requires": [
+    400445
+   ],
+   "gradeBonus": {
+    "D": 1,
+    "C": 3,
+    "B": 5
+   }
+  },
+  {
+   "id": 311004,
+   "name": "Mestre dos Mestres",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/311004",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 310994,
+   "name": "Mestre Amorfo",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Amorfo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/310994",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 310995,
+   "name": "Mestre Morto",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Morto-Vivo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/310995",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 310996,
+   "name": "Mestre Bruto",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Bruto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/310996",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 310997,
+   "name": "Mestre Planta",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Planta",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/310997",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 310998,
+   "name": "Mestre Inseto",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Inseto",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/310998",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 310999,
+   "name": "Mestre Peixe",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Peixe",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/310999",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 311000,
+   "name": "Mestre Demônio",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Demônio",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/311000",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 311001,
+   "name": "Mestre Humanoide",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Humanoide",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/311001",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 311002,
+   "name": "Mestre Anjo",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Anjo",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/311002",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
+   "id": 311003,
+   "name": "Mestre Dragão",
+   "slot": "encantoBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Encantamento dos Balões Poring (3º slot). Não vale para os Balões da Família Poring.",
+   "raceOnly": "Dragão",
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/311003",
+   "market": null,
+   "requires": [
+    19143,
+    19146,
+    19147,
+    19148,
+    19149,
+    19150,
+    19151,
+    19152,
+    19153,
+    19154
+   ]
+  },
+  {
    "id": 15088,
    "name": "Uniforme Escolar",
    "slot": "armadura",
@@ -2201,7 +2841,7 @@
    },
    "caveats": "Sem EXP próprio — parceiro de conjunto dos Bonés do Aluno.",
    "raceOnly": null,
-   "view": null,
+   "view": 931,
    "dp": "https://www.divine-pride.net/database/item/18818",
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=L%C3%A1pis+Vermelho"
   },
@@ -2216,7 +2856,7 @@
    },
    "caveats": "Sem EXP próprio — parceiro de conjunto do Pombo Revelador.",
    "raceOnly": null,
-   "view": null,
+   "view": 38,
    "dp": "https://www.divine-pride.net/database/item/2254",
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Asas+de+Anjo"
   },
@@ -2231,7 +2871,7 @@
    },
    "caveats": "Sem EXP próprio — parceiro de conjunto do Corvo.",
    "raceOnly": null,
-   "view": null,
+   "view": 93,
    "dp": "https://www.divine-pride.net/database/item/5007",
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Coroa+do+L%C3%ADder"
   }
@@ -2279,7 +2919,7 @@
     24212
    ],
    "bonus": 10,
-   "note": "Escudo+Greva Sombria do Novato (5% + 5% c/ refinos)",
+   "note": "Escudo+Greva Sombria do Novato (5% + 5% c/ refinos); nv.50-99",
    "bands": [
     "ate99"
    ]
@@ -2290,9 +2930,8 @@
     24214
    ],
    "bonus": 4,
-   "note": "Escudo+Greva Sombria Avançada (2% + 2% c/ refinos)",
+   "note": "Escudo+Greva Sombria Avançada (2% + 2% c/ refinos); nv.100-149",
    "bands": [
-    "ate99",
     "de100a174"
    ]
   },

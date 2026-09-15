@@ -11,6 +11,18 @@ export const BANDS: ReadonlyArray<{ key: Band; label: string; short: string }> =
 
 export const DEFAULT_BAND: Band = 'de100a174';
 
+// Enchant grade of the item an enchant sits on. Grade A has no bonus of its
+// own in the client text: every tier is "Grau X ou mais", so A gets B's.
+export type Grade = 'D' | 'C' | 'B' | 'A';
+
+export const GRADES: ReadonlyArray<{ key: Grade | null; label: string }> = [
+  { key: null, label: 'Sem grau' },
+  { key: 'D', label: 'Grau D' },
+  { key: 'C', label: 'Grau C' },
+  { key: 'B', label: 'Grau B' },
+  { key: 'A', label: 'Grau A' },
+];
+
 export interface ExpItem {
   id: number;
   name: string;
@@ -21,6 +33,11 @@ export interface ExpItem {
   view: number | null;
   dp: string;
   market: string | null;
+  // Enchants: the item only counts while one of these ids is also equipped.
+  requires?: number[];
+  // Extra EXP at "Grau X ou mais" of the base item. Tiers stack: grade B gets
+  // D + C + B.
+  gradeBonus?: Record<'D' | 'C' | 'B', number>;
 }
 
 export interface ExpSet {
@@ -50,13 +67,15 @@ export interface SlotDef {
   key: string;
   label: string;
   pool: string;
-  group: 'principal' | 'carta' | 'sombrio' | 'visual' | 'pedra';
+  group: 'principal' | 'carta' | 'encanto' | 'sombrio' | 'visual' | 'pedra';
 }
 
 const ALL_SLOTS: ReadonlyArray<SlotDef> = [
   { key: 'topo', label: 'Topo', pool: 'topo', group: 'principal' },
+  { key: 'encantoTopo', label: 'Encantamento (Topo)', pool: 'encantoTopo', group: 'encanto' },
   { key: 'meio', label: 'Meio', pool: 'meio', group: 'principal' },
   { key: 'baixo', label: 'Baixo', pool: 'baixo', group: 'principal' },
+  { key: 'encantoBaixo', label: 'Encantamento (Baixo)', pool: 'encantoBaixo', group: 'encanto' },
   { key: 'armadura', label: 'Armadura', pool: 'armadura', group: 'principal' },
   { key: 'arma', label: 'Arma', pool: 'arma', group: 'principal' },
   { key: 'escudo', label: 'Escudo', pool: 'escudo', group: 'principal' },
@@ -65,6 +84,7 @@ const ALL_SLOTS: ReadonlyArray<SlotDef> = [
   { key: 'acessorio1', label: 'Acessório 1', pool: 'acessorio', group: 'principal' },
   { key: 'acessorio2', label: 'Acessório 2', pool: 'acessorio', group: 'principal' },
   { key: 'cartaArmadura', label: 'Carta (Armadura)', pool: 'cartaArmadura', group: 'carta' },
+  { key: 'cartaCapa', label: 'Carta (Capa)', pool: 'cartaCapa', group: 'carta' },
   { key: 'cartaCalcado', label: 'Carta (Calçado)', pool: 'cartaCalcado', group: 'carta' },
   { key: 'sombrioArma', label: 'Sombrio (Arma)', pool: 'sombrioArma', group: 'sombrio' },
   { key: 'sombrioEscudo', label: 'Sombrio (Escudo)', pool: 'sombrioEscudo', group: 'sombrio' },
@@ -104,6 +124,7 @@ export const POOLS: ReadonlyArray<{ pool: string; label: string }> = (() => {
     calcado: 'Calçado',
     acessorio: 'Acessório',
     cartaArmadura: 'Carta de Armadura',
+    cartaCapa: 'Carta de Capa',
     cartaCalcado: 'Carta de Calçado',
     sombrioArma: 'Equipamento Sombrio (Arma)',
     sombrioEscudo: 'Equipamento Sombrio (Escudo)',
@@ -114,6 +135,8 @@ export const POOLS: ReadonlyArray<{ pool: string; label: string }> = (() => {
     pedraTopo: 'Pedra de EXP (Topo)',
     pedraMeio: 'Pedra de EXP (Meio)',
     pedraBaixo: 'Pedra de EXP (Baixo)',
+    encantoTopo: 'Encantamento do Chapéu de Oficial-LT',
+    encantoBaixo: 'Encantamento dos Balões Poring',
   };
   for (const slot of SLOTS) {
     if (seen.has(slot.pool)) continue;

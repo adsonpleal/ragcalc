@@ -14,6 +14,22 @@ export type ChangelogEntry = {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: "0.3.6",
+    date: "2026-09-15",
+    changes: [
+      "Passe o mouse sobre um item (no slot, na lista de escolha, na Lista de Equipamentos ou nas tabelas) para ver a descrição completa do jogo, com as cores do cliente.",
+      "Novos itens no Conjunto de EXP, da colaboração com o Baby Shark: Bolsa do Baby Shark (capa, +10%), [Visual] Cabeça do Baby Shark (+5%) e as cartas Baby Shark e Família Tubarão (+15%). O visual e as cartas só dão EXP durante o evento.",
+      "Novo espaço de Carta (Capa) na montagem do conjunto, para as cartas do Baby Shark.",
+      "Encantamentos agora contam: o Encantamento (Baixo) dos Balões Poring (Mestre dos Mestres +5%, ou Mestre de uma raça +5%) e o Encantamento (Topo) do Chapéu de Oficial-LT (Medalha de Experiência +10%, ou Medalha de uma raça +15%; +4% e +7% no nv. 175+). O encantamento só soma se o item certo estiver equipado.",
+      "As Medalhas do Chapéu de Oficial-LT têm um seletor de grau (D, C, B, A) no próprio slot: no Grau B a Medalha de Experiência chega a +16% e as de raça a +24%. O grau também vai no link compartilhado.",
+      "Amigo Cinnamoroll saiu da lista de Capa: o item ainda não chegou ao RO LATAM.",
+      "Novos acessórios: Ventilador Portátil-LT e Ventilador Quebrado-LT (+10% até o nv. 174, +5% no 175+; exigem nv. 100).",
+      "As setas de girar o personagem estavam invertidas: agora ← gira para a esquerda e → para a direita.",
+      "Carta Am Mut agora vai no calçado, como no jogo (estava no espaço de carta da armadura).",
+      "Correções nos Escudos e Grevas Sombrios de nível: o Novato vale 5% no +10 e o Avançado 3%, e só na faixa de nível em que podem ser usados. As Grevas do Iniciante, do Novato e Avançada também dão EXP próprio, que não era contado.",
+    ],
+  },
+  {
     version: "0.3.5",
     date: "2026-08-18",
     changes: [

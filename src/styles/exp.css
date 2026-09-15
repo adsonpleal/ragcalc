@@ -219,6 +219,100 @@
   font-variant-numeric: tabular-nums;
 }
 
+.equip-slot.is-inactive .slot-exp {
+  color: var(--text-muted);
+}
+
+.slot-grade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  cursor: default;
+}
+
+.slot-grade-label {
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Grade picker — a smaller class picker (.class-trigger / .class-popup). */
+.grade-picker {
+  position: relative;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.grade-trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 2px var(--space-2);
+  border-radius: var(--r-sm);
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.grade-trigger[aria-expanded="true"] {
+  border-color: var(--accent);
+}
+
+.grade-trigger-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.grade-popup {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  min-width: 132px;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--accent);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow);
+  padding: var(--space-1);
+  z-index: 30;
+}
+
+.grade-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  text-align: left;
+  padding: var(--space-1) var(--space-2);
+  border: none;
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--text);
+  font-size: 0.78rem;
+}
+
+.grade-option:hover {
+  background: var(--accent-fade);
+  border-color: transparent;
+}
+
+.grade-option.is-selected {
+  background: var(--accent-fade);
+  color: var(--accent);
+}
+
+.grade-option-name {
+  flex: 1;
+}
+
+.grade-option-exp {
+  color: var(--accent);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
 .slot-empty {
   color: var(--text-muted);
   font-size: 0.85rem;
@@ -511,6 +605,11 @@
   border-bottom: 1px solid var(--border);
 }
 
+.cart-icon-wrap {
+  display: flex;
+  flex: 0 0 auto;
+}
+
 .cart-icon {
   flex: 0 0 auto;
 }
@@ -552,6 +651,15 @@
   background: var(--bg-elev-2);
 }
 
+.cart-inactive {
+  color: var(--bad);
+  font-size: 0.78rem;
+}
+
+.cart-row.is-inactive .cart-exp {
+  color: var(--text-muted);
+}
+
 .cart-row--set .cart-name {
   color: var(--good);
   font-size: 0.85rem;
@@ -591,6 +699,18 @@
   background: rgba(109, 213, 140, 0.15);
   color: var(--good);
   border: 1px solid rgba(109, 213, 140, 0.4);
+}
+
+.grade-badge {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: var(--accent-fade);
+  color: var(--accent);
+  border: 1px solid rgba(255, 184, 77, 0.4);
 }
 
 /* ── Per-slot tables ───────────────────────────────────────────────── */
@@ -732,4 +852,40 @@
   .equip-slot {
     padding: var(--space-2) var(--space-1);
   }
+}
+
+/* ── Item description popover (src/components/item-tooltip.ts) ─────────
+   White, like latam-ro-calc's and the game's own: the client's ^RRGGBB colors
+   are picked for a light background and wash out on the dark theme. */
+.item-tooltip {
+  position: fixed;
+  z-index: 1000;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: min(90vw, 34rem);
+  /* A long description scrolls here instead of running off the window. */
+  max-height: 85vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-3);
+  background: #ffffff;
+  color: #000000;
+  border-radius: var(--r-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  font-size: 0.85rem;
+  line-height: 1.25;
+  white-space: normal;
+  user-select: text;
+  cursor: auto;
+}
+
+.item-tooltip-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: var(--space-2);
+}
+
+.item-tooltip-empty {
+  color: #666666;
+  font-style: italic;
 }

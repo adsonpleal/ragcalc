@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { computeBreakdown, totalExp } from './exp-math';
+import { type Grade, ITEM_BY_ID, SLOT_BY_KEY } from './exp-data';
+import { computeBreakdown, itemExp, totalExp } from './exp-math';
 
 describe('computeBreakdown / totalExp', () => {
   it('Super Óculos Poring alone gives +5%', () => {
@@ -55,6 +56,53 @@ describe('computeBreakdown / totalExp', () => {
     // Escudo+Greva Sombria do Iniciante: bonus only on band "ate99".
     expect(computeBreakdown([24211, 24210], 'ate99').setsTotal).toBe(20);
     expect(computeBreakdown([24211, 24210], 'de100a174').setsTotal).toBe(0);
+  });
+
+  it('Escudo+Greva Sombria Avançada only exist at nv.100-149: 3+3 plus a +4% set', () => {
+    expect(totalExp([24215, 24214], 'ate99')).toBe(0);
+    expect(totalExp([24215, 24214], 'de100a174')).toBe(10);
+    expect(totalExp([24215, 24214], 'nv175mais')).toBe(0);
+  });
+
+  it('Escudo+Greva Sombria do Novato: +1% a cada 2 refinos each, plus a +10% set', () => {
+    expect(totalExp([24213, 24212], 'ate99')).toBe(20);
+  });
+
+  it('Carta Baby Shark counts in the garment card slot', () => {
+    expect(ITEM_BY_ID.get(300834)?.slot).toBe('cartaCapa');
+    expect(SLOT_BY_KEY.get('cartaCapa')?.pool).toBe('cartaCapa');
+    expect(totalExp([480824, 300834], 'de100a174')).toBe(25);
+  });
+
+  it('Mestre dos Mestres only counts on a Balão Poring', () => {
+    const alone = computeBreakdown([311004], 'de100a174');
+    expect(alone.total).toBe(0);
+    expect(alone.items[0]!.inactive).toBe(true);
+    expect(totalExp([19143, 311004], 'de100a174')).toBe(10);
+    // Balões da Família Poring is not enchantable.
+    expect(totalExp([19095, 311004], 'de100a174')).toBe(5);
+  });
+
+  it('Medalha de Experiência needs the Chapéu de Oficial-LT: +10% to nv.174, +4% at 175+', () => {
+    expect(totalExp([312406], 'de100a174')).toBe(0);
+    expect(totalExp([400445, 312406], 'de100a174')).toBe(10);
+    expect(totalExp([400445, 312406], 'nv175mais')).toBe(4);
+    expect(ITEM_BY_ID.get(312414)?.raceOnly).toBe('Humanoide');
+    expect(SLOT_BY_KEY.get('encantoTopo')?.pool).toBe('encantoTopo');
+  });
+
+  it('Medalha grade bonuses stack per tier on top of the base value', () => {
+    const exp = (grade: Grade | null) =>
+      totalExp([400445, 312406], 'de100a174', undefined, new Map(grade ? [[312406, grade]] : []));
+    expect(exp(null)).toBe(10);
+    expect(exp('D')).toBe(11);
+    expect(exp('C')).toBe(13);
+    expect(exp('B')).toBe(16);
+    expect(exp('A')).toBe(16);
+    // Race medal at nv.175+: 7 + 1 + 3 + 5.
+    expect(itemExp(ITEM_BY_ID.get(312409)!, 'nv175mais', 'B')).toBe(16);
+    // A grade cannot make an unusable band count (the hat needs nv.100).
+    expect(itemExp(ITEM_BY_ID.get(312409)!, 'ate99', 'B')).toBe(0);
   });
 
   it('duplicate accessory ids each contribute item exp but count once for sets', () => {

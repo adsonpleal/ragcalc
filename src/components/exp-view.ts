@@ -3,6 +3,8 @@ import {
   BANDS,
   DEFAULT_SERVER,
   type ExpItem,
+  type Grade,
+  GRADES,
   ICON_URL,
   ITEM_BY_ID,
   itemsForPool,
@@ -13,9 +15,10 @@ import {
   SLOTS,
 } from '../lib/exp-data';
 import { APP_VERSION } from '../changelog';
-import { computeBreakdown } from '../lib/exp-math';
+import { computeBreakdown, itemExp, requirementMet } from '../lib/exp-math';
 import {
   buildExpShareUrl,
+  type Grades,
   readExpState,
   type Selection,
   writeExpState,
@@ -30,6 +33,7 @@ import {
   resolveGender,
 } from '../lib/classes';
 import { footerHtml } from '../lib/site-footer';
+import { attachItemTooltip } from './item-tooltip';
 
 const RAGASSETS = 'https://assets.latam-tools.com.br';
 // Taller render than the reference (169) so full headgear + under-ground poses
@@ -39,10 +43,12 @@ const CANVAS = '200x230+100+175';
 interface State {
   band: Band;
   selection: Selection;
+  grades: Grades;
   openSlot: string | null;
   openPools: Set<string>;
   job: number;
   classOpen: boolean;
+  gradeOpen: string | null;
   gender: Gender;
   bodyDir: number;
   action: number;
@@ -84,8 +90,8 @@ const ACTIONS: ReadonlyArray<{ type: number; label: string }> = [
 // / extra slot sits directly under its parent within the same column, so the
 // columns pack tightly with no cross-row gaps.
 const PRINCIPAL_COLUMNS: string[][] = [
-  ['topo', 'meio', 'baixo', 'arma'],
-  ['armadura', 'cartaArmadura', 'escudo', 'capa'],
+  ['topo', 'encantoTopo', 'meio', 'baixo', 'encantoBaixo', 'arma'],
+  ['armadura', 'cartaArmadura', 'escudo', 'capa', 'cartaCapa'],
   ['calcado', 'cartaCalcado', 'acessorio1', 'acessorio2'],
 ];
 const EXTRA_GROUPS: { title: string; keys: string[] }[] = [
@@ -99,10 +105,12 @@ export function renderExpCalculator(root: HTMLElement): void {
   const state: State = {
     band: initial.band,
     selection: initial.selection,
+    grades: initial.grades,
     openSlot: null,
     openPools: new Set(),
     job: DEFAULT_CLASS_ID,
     classOpen: false,
+    gradeOpen: null,
     gender: 'male',
     bodyDir: 0,
     action: 0,
@@ -119,13 +127,36 @@ export function renderExpCalculator(root: HTMLElement): void {
       state.classOpen = false;
       changed = true;
     }
+    if (state.gradeOpen !== null) {
+      state.gradeOpen = null;
+      changed = true;
+    }
     if (changed) render();
   });
 
+  const tooltip = attachItemTooltip(root);
   render();
 
   function selectedIds(): number[] {
     return [...state.selection.values()];
+  }
+
+  // Grades are chosen per slot; the math wants them per equipped item id.
+  function gradesById(): Map<number, Grade> {
+    const out = new Map<number, Grade>();
+    for (const [slotKey, grade] of state.grades) {
+      const id = state.selection.get(slotKey);
+      if (id != null) out.set(id, grade);
+    }
+    return out;
+  }
+
+  function setGrade(slotKey: string, grade: Grade | null): void {
+    if (grade) state.grades.set(slotKey, grade);
+    else state.grades.delete(slotKey);
+    state.gradeOpen = null;
+    persist();
+    render();
   }
 
   function equip(slotKey: string, id: number): void {
@@ -168,7 +199,7 @@ export function renderExpCalculator(root: HTMLElement): void {
   }
 
   function persist(): void {
-    writeExpState({ band: state.band, selection: state.selection });
+    writeExpState({ band: state.band, selection: state.selection, grades: state.grades });
   }
 
   function flash(slotKey: string): void {
@@ -181,7 +212,9 @@ export function renderExpCalculator(root: HTMLElement): void {
   }
 
   function render(): void {
-    const breakdown = computeBreakdown(selectedIds(), state.band);
+    // The element under the popover is about to be replaced.
+    tooltip.hide();
+    const breakdown = computeBreakdown(selectedIds(), state.band, undefined, gradesById());
 
     root.innerHTML = `
       <header class="topbar">
@@ -286,18 +319,48 @@ export function renderExpCalculator(root: HTMLElement): void {
     const item = id != null ? ITEM_BY_ID.get(id) : undefined;
     const open = state.openSlot === slot.key;
     const filled = item != null;
-    const isCard = slot.group === 'carta';
-    const cls = `equip-slot${isCard ? ' equip-slot--card' : ''}${filled ? ' is-filled' : ''}${open ? ' is-open' : ''}`;
+    const isCard = slot.group === 'carta' || slot.group === 'encanto';
+    const inactive = filled && !requirementMet(item, new Set(selectedIds()));
+    const cls = `equip-slot${isCard ? ' equip-slot--card' : ''}${filled ? ' is-filled' : ''}${inactive ? ' is-inactive' : ''}${open || state.gradeOpen === slot.key ? ' is-open' : ''}`;
     const body = filled
       ? `${icon(item.id, 22, 'slot-icon')}
          <span class="slot-name">${escapeHtml(item.name)}</span>
-         <span class="slot-exp">+${item.exp[state.band]}%</span>`
+         <span class="slot-exp"${inactive ? ` title="${escapeHtml(requirementHint(item))}"` : ''}>+${inactive ? 0 : itemExp(item, state.band, state.grades.get(slot.key))}%</span>`
       : `<span class="slot-empty">Selecionar…</span>`;
     return `<div class="${cls}" data-slot="${slot.key}" tabindex="0" role="button"
         aria-label="${escapeHtml(slot.label)}">
       <span class="slot-tag">${escapeHtml(slot.label)}</span>
-      <div class="slot-body">${body}</div>
+      <div class="slot-body"${filled ? ` data-desc-id="${item.id}"` : ''}>${body}</div>
+      ${filled && item.gradeBonus ? renderGradePicker(slot.key, item) : ''}
       ${open ? renderDropdown(slot) : ''}
+    </div>`;
+  }
+
+  // A compact copy of the class picker: trigger button + listbox popup.
+  function renderGradePicker(slotKey: string, item: ExpItem): string {
+    const current = state.grades.get(slotKey) ?? null;
+    const open = state.gradeOpen === slotKey;
+    const base = baseItemName(item);
+    const label = base ? `Grau do ${base}` : 'Grau do item encantado';
+    const currentLabel = GRADES.find((g) => g.key === current)?.label ?? 'Sem grau';
+    const options = GRADES.map((g) => {
+      const sel = g.key === current;
+      return `<button type="button" class="grade-option${sel ? ' is-selected' : ''}" role="option"
+        aria-selected="${sel}" data-grade-slot="${slotKey}" data-grade-value="${g.key ?? ''}">
+        <span class="grade-option-name">${escapeHtml(g.label)}</span>
+        <span class="grade-option-exp">+${itemExp(item, state.band, g.key)}%</span>
+      </button>`;
+    }).join('');
+    return `<div class="slot-grade" title="${escapeHtml(label)}">
+      <span class="slot-grade-label">Grau</span>
+      <div class="grade-picker">
+        <button type="button" class="grade-trigger" data-grade-toggle="${slotKey}"
+          aria-haspopup="listbox" aria-expanded="${open}" aria-label="${escapeHtml(label)}">
+          <span class="grade-trigger-name">${escapeHtml(currentLabel)}</span>
+          <span class="class-caret">▾</span>
+        </button>
+        <div class="grade-popup" role="listbox" ${open ? '' : 'hidden'}>${options}</div>
+      </div>
     </div>`;
   }
 
@@ -305,12 +368,12 @@ export function renderExpCalculator(root: HTMLElement): void {
     const items = itemsForPool(slot.pool);
     const rows = items
       .map(
-        (it) => `<button type="button" class="dd-row" data-equip="${it.id}"
+        (it) => `<button type="button" class="dd-row" data-equip="${it.id}" data-desc-id="${it.id}"
           data-slot="${slot.key}" data-name="${escapeHtml(it.name.toLowerCase())}">
           ${icon(it.id, 18, 'dd-icon')}
           <span class="dd-name">${escapeHtml(it.name)}</span>
           ${raceBadge(it)}
-          <span class="dd-exp">+${it.exp[state.band]}%</span>
+          <span class="dd-exp">+${itemExp(it, state.band, state.grades.get(slot.key))}%</span>
         </button>`,
       )
       .join('');
@@ -364,30 +427,33 @@ export function renderExpCalculator(root: HTMLElement): void {
         ).join('')}
       </select>
       <div class="character-controls">
-        <button type="button" class="rot-btn" data-rot="-1" aria-label="Girar para a esquerda">←</button>
+        <button type="button" class="rot-btn" data-rot="1" aria-label="Girar para a esquerda">←</button>
         <div class="gender-toggle">
           <button type="button" data-gender="male" class="${activeGender === 'male' ? 'is-active' : ''}" ${hasMale ? '' : 'disabled'}>♂</button>
           <button type="button" data-gender="female" class="${activeGender === 'female' ? 'is-active' : ''}" ${hasFemale ? '' : 'disabled'}>♀</button>
         </div>
-        <button type="button" class="rot-btn" data-rot="1" aria-label="Girar para a direita">→</button>
+        <button type="button" class="rot-btn" data-rot="-1" aria-label="Girar para a direita">→</button>
       </div>
     </div>`;
   }
 
   function renderCart(breakdown: ReturnType<typeof computeBreakdown>): string {
     const rows: string[] = [];
+    const equipped = new Set(selectedIds());
     for (const slot of SLOTS) {
       const id = state.selection.get(slot.key);
       if (id == null) continue;
       const item = ITEM_BY_ID.get(id);
       if (!item) continue;
-      rows.push(`<li class="cart-row">
-        ${icon(item.id, 24, 'cart-icon')}
+      const inactive = !requirementMet(item, equipped);
+      rows.push(`<li class="cart-row${inactive ? ' is-inactive' : ''}">
+        <span class="cart-icon-wrap" data-desc-id="${item.id}">${icon(item.id, 24, 'cart-icon')}</span>
         <div class="cart-main">
-          <span class="cart-name">${escapeHtml(item.name)}${raceBadge(item)}</span>
+          <span class="cart-name" data-desc-id="${item.id}">${escapeHtml(item.name)}${raceBadge(item)}${gradeTag(item, state.grades.get(slot.key))}</span>
           <span class="cart-links">${itemLinks(item, state.server)}</span>
+          ${inactive ? `<span class="cart-inactive">${escapeHtml(requirementHint(item))}</span>` : ''}
         </div>
-        <span class="cart-exp">+${item.exp[state.band]}%</span>
+        <span class="cart-exp">+${inactive ? 0 : itemExp(item, state.band, state.grades.get(slot.key))}%</span>
         <button type="button" class="cart-remove" data-remove="${slot.key}" aria-label="Remover ${escapeHtml(item.name)}">✕</button>
       </li>`);
     }
@@ -412,8 +478,8 @@ export function renderExpCalculator(root: HTMLElement): void {
       .map((it) => {
         const isSel = selected.has(it.id);
         return `<tr class="pool-row${isSel ? ' is-selected' : ''}" data-equip="${it.id}" data-pool="${pool}">
-          <td class="pool-icon-cell">${icon(it.id, 22, 'pool-icon')}</td>
-          <td class="pool-name-cell">
+          <td class="pool-icon-cell" data-desc-id="${it.id}">${icon(it.id, 22, 'pool-icon')}</td>
+          <td class="pool-name-cell" data-desc-id="${it.id}">
             <span class="pool-name">${escapeHtml(it.name)}${raceBadge(it)}</span>
             ${it.caveats ? `<span class="pool-caveat">${escapeHtml(it.caveats)}</span>` : ''}
           </td>
@@ -436,10 +502,11 @@ export function renderExpCalculator(root: HTMLElement): void {
     root.querySelectorAll<HTMLElement>('.equip-slot').forEach((el) => {
       el.addEventListener('click', (e) => {
         const target = e.target as HTMLElement;
-        if (target.closest('.slot-dropdown')) return; // dropdown handles its own
+        if (target.closest('.slot-dropdown, .slot-grade')) return; // they handle their own
         e.stopPropagation();
         const key = el.dataset.slot!;
         state.openSlot = state.openSlot === key ? null : key;
+        state.gradeOpen = null;
         render();
       });
     });
@@ -470,6 +537,23 @@ export function renderExpCalculator(root: HTMLElement): void {
       });
     }
 
+    root.querySelectorAll<HTMLElement>('[data-grade-toggle]').forEach((el) => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const key = el.dataset.gradeToggle!;
+        state.gradeOpen = state.gradeOpen === key ? null : key;
+        state.openSlot = null;
+        state.classOpen = false;
+        render();
+      });
+    });
+    root.querySelectorAll<HTMLElement>('.grade-option[data-grade-slot]').forEach((el) => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setGrade(el.dataset.gradeSlot!, (el.dataset.gradeValue || null) as Grade | null);
+      });
+    });
+
     root.querySelectorAll<HTMLInputElement>('input[name="band"]').forEach((el) => {
       el.addEventListener('change', () => setBand(el.value as Band));
     });
@@ -492,6 +576,7 @@ export function renderExpCalculator(root: HTMLElement): void {
     classToggle?.addEventListener('click', (e) => {
       e.stopPropagation();
       state.classOpen = !state.classOpen;
+      state.gradeOpen = null;
       render();
     });
     root.querySelectorAll<HTMLElement>('.class-option[data-class-id]').forEach((el) => {
@@ -534,7 +619,11 @@ export function renderExpCalculator(root: HTMLElement): void {
     const shareBtn = root.querySelector<HTMLButtonElement>('[data-action="share"]');
     const feedback = root.querySelector<HTMLElement>('[data-out="share-feedback"]');
     shareBtn?.addEventListener('click', async () => {
-      const url = buildExpShareUrl({ band: state.band, selection: state.selection });
+      const url = buildExpShareUrl({
+        band: state.band,
+        selection: state.selection,
+        grades: state.grades,
+      });
       try {
         await navigator.clipboard.writeText(url);
         if (feedback) feedback.textContent = 'Link copiado!';
@@ -594,6 +683,24 @@ function itemLinks(item: ExpItem, server: Server): string {
 // The dataset's market links bake in serverType=FREYA; swap in the chosen server.
 function marketUrl(url: string, server: Server): string {
   return url.replace(/([?&]serverType=)[^&]*/, `$1${server}`);
+}
+
+// The single item an enchant sits on, for labels ("Grau do Chapéu…").
+function baseItemName(item: ExpItem): string | null {
+  const names = new Set((item.requires ?? []).map((id) => ITEM_BY_ID.get(id)?.name));
+  return names.size === 1 ? ([...names][0] ?? null) : null;
+}
+
+function gradeTag(item: ExpItem, grade: Grade | undefined): string {
+  if (!item.gradeBonus || !grade) return '';
+  return ` <span class="grade-badge">Grau ${grade}</span>`;
+}
+
+// Why an enchant counts as zero: the items it has to be applied to.
+function requirementHint(item: ExpItem): string {
+  const names = [...new Set((item.requires ?? []).map((id) => ITEM_BY_ID.get(id)?.name ?? String(id)))];
+  const target = names.length > 3 ? 'um dos Balões Poring' : names.join(' ou ');
+  return `Só conta com ${target} equipado.`;
 }
 
 function raceBadge(item: ExpItem): string {

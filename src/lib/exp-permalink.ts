@@ -1,11 +1,15 @@
-import { type Band, BANDS, DEFAULT_BAND, ITEM_BY_ID, SLOTS } from './exp-data';
+import { type Band, BANDS, DEFAULT_BAND, type Grade, GRADES, ITEM_BY_ID, SLOTS } from './exp-data';
 
 // slotKey -> equipped itemId
 export type Selection = Map<string, number>;
 
+// slotKey -> grade of the item that slot's enchant sits on
+export type Grades = Map<string, Grade>;
+
 export interface ExpState {
   band: Band;
   selection: Selection;
+  grades: Grades;
 }
 
 // Slots that draw from each pool, in UI order (accessory pool has two slots).
@@ -24,6 +28,7 @@ export function readExpState(): ExpState {
   return {
     band: parseBand(url.searchParams.get('b')),
     selection: parseSelection(url.searchParams.get('g')),
+    grades: parseGrades(url.searchParams.get('gd')),
   };
 }
 
@@ -47,6 +52,34 @@ function applyParams(params: URLSearchParams, state: ExpState): void {
   const ids = serializeSelection(state.selection);
   if (ids) params.set('g', ids);
   else params.delete('g');
+
+  const grades = serializeGrades(state);
+  if (grades) params.set('gd', grades);
+  else params.delete('gd');
+}
+
+// "encantoTopo.B,…" — only for slots holding an item a grade can change.
+function serializeGrades(state: ExpState): string {
+  const parts: string[] = [];
+  for (const slot of SLOTS) {
+    const grade = state.grades.get(slot.key);
+    const id = state.selection.get(slot.key);
+    if (!grade || id == null || !ITEM_BY_ID.get(id)?.gradeBonus) continue;
+    parts.push(`${slot.key}.${grade}`);
+  }
+  return parts.join(',');
+}
+
+function parseGrades(raw: string | null): Grades {
+  const grades: Grades = new Map();
+  if (!raw) return grades;
+  for (const part of raw.split(',')) {
+    const [slotKey, grade] = part.split('.');
+    if (!slotKey || !SLOTS.some((s) => s.key === slotKey)) continue;
+    if (!GRADES.some((g) => g.key === grade)) continue;
+    grades.set(slotKey, grade as Grade);
+  }
+  return grades;
 }
 
 // Emit ids in slot order so grouping-by-pool round-trips (incl. accessory dups).
