@@ -219,8 +219,21 @@
   font-variant-numeric: tabular-nums;
 }
 
-.equip-slot.is-inactive .slot-exp {
-  color: var(--text-muted);
+/* An enchant slot with no item it can go on (Encantamento without its balloon
+   or hat). It says what it needs instead of opening a picker. */
+.equip-slot.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.equip-slot.is-disabled:hover {
+  border-color: var(--border);
+}
+
+.equip-slot.is-disabled .slot-empty {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .slot-grade {
@@ -651,15 +664,6 @@
   background: var(--bg-elev-2);
 }
 
-.cart-inactive {
-  color: var(--bad);
-  font-size: 0.78rem;
-}
-
-.cart-row.is-inactive .cart-exp {
-  color: var(--text-muted);
-}
-
 .cart-row--set .cart-name {
   color: var(--good);
   font-size: 0.85rem;
@@ -782,6 +786,15 @@
 
 .pool-row.is-selected .pool-name {
   color: var(--accent);
+}
+
+.pool-row.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pool-row.is-disabled:hover {
+  background: none;
 }
 
 .pool-items td {

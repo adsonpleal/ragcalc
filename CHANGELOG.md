@@ -6,6 +6,19 @@ o versionamento é informal enquanto o projeto está pré-1.0. O texto voltado a
 usuário (e a fonte do anúncio automático no Discord após o deploy) fica em
 `src/changelog.ts`.
 
+## [0.3.7] — 2026-09-15
+
+### Alterado
+
+- **Slots de encantamento só abrem com um item-base que aceita o encantamento.**
+  Sem ele o slot fica esmaecido, não abre o seletor e diz o que falta ("Requer
+  Chapéu de Oficial-LT", "Requer um Balão Poring"); as linhas do encantamento
+  nas tabelas também ficam desabilitadas. Tirar ou trocar o item-base por um que
+  não aceita remove o encantamento e o grau dele, e um link compartilhado com
+  encantamento órfão é limpo ao abrir. Com isso some a exibição de encantamento
+  "inativo" (+0% com aviso) da 0.3.6, que deixou de ser alcançável;
+  `computeBreakdown` continua zerando um encantamento sem base.
+
 ## [0.3.6] — 2026-09-15
 
 ### Adicionado

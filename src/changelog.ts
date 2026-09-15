@@ -14,6 +14,13 @@ export type ChangelogEntry = {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: "0.3.7",
+    date: "2026-09-15",
+    changes: [
+      "Os espaços de Encantamento (Topo) e Encantamento (Baixo) só ficam liberados com um item que aceita o encantamento equipado: o Chapéu de Oficial-LT no Topo e um dos Balões Poring no Baixo. Tirar ou trocar o item remove o encantamento junto.",
+    ],
+  },
+  {
     version: "0.3.6",
     date: "2026-09-15",
     changes: [

@@ -135,6 +135,7 @@ export function renderExpCalculator(root: HTMLElement): void {
   });
 
   const tooltip = attachItemTooltip(root);
+  if (pruneUnsupported()) persist();
   render();
 
   function selectedIds(): number[] {
@@ -159,8 +160,34 @@ export function renderExpCalculator(root: HTMLElement): void {
     render();
   }
 
+  // An enchant slot is usable only while an item it can go on is equipped.
+  // Pools with no enchants (everything else) are always usable.
+  function slotEnabled(slot: SlotDef): boolean {
+    const pool = itemsForPool(slot.pool);
+    if (!pool.some((it) => it.requires)) return true;
+    const equipped = new Set(selectedIds());
+    return pool.some((it) => requirementMet(it, equipped));
+  }
+
+  // Drop enchants whose base item is gone (removed, swapped, or never there in
+  // a shared link), with their grade. Returns whether anything was dropped.
+  function pruneUnsupported(): boolean {
+    const equipped = new Set(selectedIds());
+    let pruned = false;
+    for (const [slotKey, id] of state.selection) {
+      const item = ITEM_BY_ID.get(id);
+      if (item && !requirementMet(item, equipped)) {
+        state.selection.delete(slotKey);
+        state.grades.delete(slotKey);
+        pruned = true;
+      }
+    }
+    return pruned;
+  }
+
   function equip(slotKey: string, id: number): void {
     state.selection.set(slotKey, id);
+    pruneUnsupported();
     state.openSlot = null;
     persist();
     render();
@@ -171,11 +198,12 @@ export function renderExpCalculator(root: HTMLElement): void {
     const slots = SLOTS.filter((s) => s.pool === pool);
     const target =
       slots.find((s) => !state.selection.has(s.key)) ?? slots[0];
-    if (target) equip(target.key, id);
+    if (target && slotEnabled(target)) equip(target.key, id);
   }
 
   function clearSlot(slotKey: string): void {
     state.selection.delete(slotKey);
+    pruneUnsupported();
     state.openSlot = null;
     persist();
     render();
@@ -320,12 +348,19 @@ export function renderExpCalculator(root: HTMLElement): void {
     const open = state.openSlot === slot.key;
     const filled = item != null;
     const isCard = slot.group === 'carta' || slot.group === 'encanto';
-    const inactive = filled && !requirementMet(item, new Set(selectedIds()));
-    const cls = `equip-slot${isCard ? ' equip-slot--card' : ''}${filled ? ' is-filled' : ''}${inactive ? ' is-inactive' : ''}${open || state.gradeOpen === slot.key ? ' is-open' : ''}`;
+    if (!slotEnabled(slot)) {
+      const needs = `Requer ${requirementLabel(itemsForPool(slot.pool))}`;
+      return `<div class="equip-slot${isCard ? ' equip-slot--card' : ''} is-disabled" data-slot="${slot.key}"
+          role="button" aria-disabled="true" aria-label="${escapeHtml(`${slot.label}: ${needs}`)}">
+        <span class="slot-tag">${escapeHtml(slot.label)}</span>
+        <div class="slot-body"><span class="slot-empty" title="${escapeHtml(needs)}">${escapeHtml(needs)}</span></div>
+      </div>`;
+    }
+    const cls = `equip-slot${isCard ? ' equip-slot--card' : ''}${filled ? ' is-filled' : ''}${open || state.gradeOpen === slot.key ? ' is-open' : ''}`;
     const body = filled
       ? `${icon(item.id, 22, 'slot-icon')}
          <span class="slot-name">${escapeHtml(item.name)}</span>
-         <span class="slot-exp"${inactive ? ` title="${escapeHtml(requirementHint(item))}"` : ''}>+${inactive ? 0 : itemExp(item, state.band, state.grades.get(slot.key))}%</span>`
+         <span class="slot-exp">+${itemExp(item, state.band, state.grades.get(slot.key))}%</span>`
       : `<span class="slot-empty">Selecionar…</span>`;
     return `<div class="${cls}" data-slot="${slot.key}" tabindex="0" role="button"
         aria-label="${escapeHtml(slot.label)}">
@@ -439,21 +474,18 @@ export function renderExpCalculator(root: HTMLElement): void {
 
   function renderCart(breakdown: ReturnType<typeof computeBreakdown>): string {
     const rows: string[] = [];
-    const equipped = new Set(selectedIds());
     for (const slot of SLOTS) {
       const id = state.selection.get(slot.key);
       if (id == null) continue;
       const item = ITEM_BY_ID.get(id);
       if (!item) continue;
-      const inactive = !requirementMet(item, equipped);
-      rows.push(`<li class="cart-row${inactive ? ' is-inactive' : ''}">
+      rows.push(`<li class="cart-row">
         <span class="cart-icon-wrap" data-desc-id="${item.id}">${icon(item.id, 24, 'cart-icon')}</span>
         <div class="cart-main">
           <span class="cart-name" data-desc-id="${item.id}">${escapeHtml(item.name)}${raceBadge(item)}${gradeTag(item, state.grades.get(slot.key))}</span>
           <span class="cart-links">${itemLinks(item, state.server)}</span>
-          ${inactive ? `<span class="cart-inactive">${escapeHtml(requirementHint(item))}</span>` : ''}
         </div>
-        <span class="cart-exp">+${inactive ? 0 : itemExp(item, state.band, state.grades.get(slot.key))}%</span>
+        <span class="cart-exp">+${itemExp(item, state.band, state.grades.get(slot.key))}%</span>
         <button type="button" class="cart-remove" data-remove="${slot.key}" aria-label="Remover ${escapeHtml(item.name)}">✕</button>
       </li>`);
     }
@@ -477,7 +509,9 @@ export function renderExpCalculator(root: HTMLElement): void {
     const rows = items
       .map((it) => {
         const isSel = selected.has(it.id);
-        return `<tr class="pool-row${isSel ? ' is-selected' : ''}" data-equip="${it.id}" data-pool="${pool}">
+        const usable = requirementMet(it, selected);
+        const needs = usable ? '' : ` title="${escapeHtml(`Requer ${requirementLabel([it])}`)}"`;
+        return `<tr class="pool-row${isSel ? ' is-selected' : ''}${usable ? '' : ' is-disabled'}" data-equip="${it.id}" data-pool="${pool}"${needs}>
           <td class="pool-icon-cell" data-desc-id="${it.id}">${icon(it.id, 22, 'pool-icon')}</td>
           <td class="pool-name-cell" data-desc-id="${it.id}">
             <span class="pool-name">${escapeHtml(it.name)}${raceBadge(it)}</span>
@@ -503,6 +537,7 @@ export function renderExpCalculator(root: HTMLElement): void {
       el.addEventListener('click', (e) => {
         const target = e.target as HTMLElement;
         if (target.closest('.slot-dropdown, .slot-grade')) return; // they handle their own
+        if (el.classList.contains('is-disabled')) return; // the document click still closes popups
         e.stopPropagation();
         const key = el.dataset.slot!;
         state.openSlot = state.openSlot === key ? null : key;
@@ -696,11 +731,12 @@ function gradeTag(item: ExpItem, grade: Grade | undefined): string {
   return ` <span class="grade-badge">Grau ${grade}</span>`;
 }
 
-// Why an enchant counts as zero: the items it has to be applied to.
-function requirementHint(item: ExpItem): string {
-  const names = [...new Set((item.requires ?? []).map((id) => ITEM_BY_ID.get(id)?.name ?? String(id)))];
-  const target = names.length > 3 ? 'um dos Balões Poring' : names.join(' ou ');
-  return `Só conta com ${target} equipado.`;
+// What enchants need equipped, for a disabled slot or table row:
+// "Chapéu de Oficial-LT", or "um Balão Poring" for the ten balloons.
+function requirementLabel(enchants: ReadonlyArray<ExpItem>): string {
+  const ids = new Set(enchants.flatMap((it) => it.requires ?? []));
+  const names = [...new Set([...ids].map((id) => ITEM_BY_ID.get(id)?.name ?? String(id)))];
+  return names.length > 3 ? 'um Balão Poring' : names.join(' ou ');
 }
 
 function raceBadge(item: ExpItem): string {
