@@ -14,6 +14,13 @@ export type ChangelogEntry = {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: "0.3.8",
+    date: "2026-09-30",
+    changes: [
+      "Descrições de 10 itens do Conjunto de EXP atualizadas com o texto mais recente do jogo. A Bolsa do Baby Shark agora mostra os efeitos corretos de HP, SP e conversão de dano em SP.",
+    ],
+  },
+  {
     version: "0.3.7",
     date: "2026-09-15",
     changes: [
