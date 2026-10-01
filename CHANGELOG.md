@@ -6,6 +6,15 @@ o versionamento é informal enquanto o projeto está pré-1.0. O texto voltado a
 usuário (e a fonte do anúncio automático no Discord após o deploy) fica em
 `src/changelog.ts`.
 
+## [0.3.8] — 2026-09-30
+
+### Corrigido
+
+- **Descrições de 10 itens do Conjunto de EXP** sincronizadas com o texto mais
+  recente do cliente via ragassets. A Bolsa do Baby Shark agora descreve
+  corretamente HP máx. +20, SP máx. +2 por nível de base e a conversão de dano
+  físico em SP. Os bônus de EXP e a lista de classes não mudaram.
+
 ## [0.3.7] — 2026-09-15
 
 ### Alterado
