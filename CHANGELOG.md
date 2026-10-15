@@ -6,6 +6,36 @@ o versionamento é informal enquanto o projeto está pré-1.0. O texto voltado a
 usuário (e a fonte do anúncio automático no Discord após o deploy) fica em
 `src/changelog.ts`.
 
+## [0.3.9] — 2026-10-15
+
+### Removido
+
+- **Carta Baby Shark** (300834), **Carta Família Tubarão** (300835) e
+  **[Visual] Cabeça do Baby Shark** (401367): os bônus de EXP são exclusivos
+  do evento, encerrado na manutenção de 14/10 conforme as
+  [notas oficiais](https://ro.gnjoyamericas.com/en/news/notice/440).
+  A **Bolsa do Baby Shark** (480824) permanece com +10%: sua descrição não
+  condiciona o bônus ao evento. O slot Carta (Capa) fica oculto por não ter
+  mais itens; links antigos ignoram os ids removidos. A grade principal agora
+  filtra slots vazios antes de renderizar, evitando erro ao abrir a calculadora
+  sem o pool de cartas de capa.
+
+### Corrigido
+
+- **Nove pares de Sombrios de raça** conferidos contra
+  [/raw/items.json do ragassets](https://assets.latam-tools.com.br/raw/items.json),
+  publicado em 15/10. Os Escudos do Açougueiro, Carniceiro, Inseticida,
+  Pescador, Matador, Satanista, Colecionador, Exorcista e Jardineiro contavam
+  +3% sozinhos; agora o bônus fica em `sets` e exige a Greva correspondente.
+  Adicionadas as nove Grevas (24062, 24064–24071), sem EXP próprio, com links,
+  notas de conjunto e descrições do cliente.
+- `exp-descriptions.json` regerado: 177 descrições para 183 itens (os mesmos
+  seis ids sem texto no cliente). As classes e as descrições dos itens que
+  permaneceram já coincidiam com a fonte; nenhum nome ou valor foi alterado
+  sem evidência. A Batata-doce na Boca (31975) continua fora da lista: seu
+  bônus depende do Festival da Colheita, ausente dos eventos ativos nas notas
+  oficiais de 14/10.
+
 ## [0.3.8] — 2026-09-30
 
 ### Corrigido
