@@ -324,7 +324,9 @@ export function renderExpCalculator(root: HTMLElement): void {
     const cols = PRINCIPAL_COLUMNS.map(
       (keys) =>
         `<div class="equip-col">${keys
-          .map((k) => renderSlot(SLOTS.find((s) => s.key === k)!))
+          .map((k) => SLOTS.find((s) => s.key === k))
+          .filter((s): s is SlotDef => s != null)
+          .map(renderSlot)
           .join('')}</div>`,
     ).join('');
     return `<div class="equip-group"><div class="equip-columns">${cols}</div></div>`;

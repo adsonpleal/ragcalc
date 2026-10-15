@@ -14,6 +14,14 @@ export type ChangelogEntry = {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: "0.3.9",
+    date: "2026-10-15",
+    changes: [
+      "As cartas Baby Shark e Família Tubarão e o [Visual] Cabeça do Baby Shark saíram do Conjunto de EXP: o evento acabou e os bônus não valem mais. A Bolsa do Baby Shark continua dando +10% de EXP.",
+      "Os nove Escudos Sombrios contra raças agora só somam +3% de EXP com a Greva Sombria correspondente equipada. As grevas foram adicionadas à lista, com as descrições do jogo.",
+    ],
+  },
+  {
     version: "0.3.8",
     date: "2026-09-30",
     changes: [

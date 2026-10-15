@@ -1846,15 +1846,150 @@
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+Racial"
   },
   {
+   "id": 24062,
+   "name": "Greva Sombria do Açougueiro",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% contra a raça Humanoide no conjunto com Escudo Sombrio do Açougueiro.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24062",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+A%C3%A7ougueiro"
+  },
+  {
+   "id": 24065,
+   "name": "Greva Sombria do Carniceiro",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% contra a raça Bruto no conjunto com Escudo Sombrio do Carniceiro.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24065",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Carniceiro"
+  },
+  {
+   "id": 24066,
+   "name": "Greva Sombria do Inseticida",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% contra a raça Inseto no conjunto com Escudo Sombrio do Inseticida.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24066",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Inseticida"
+  },
+  {
+   "id": 24067,
+   "name": "Greva Sombria do Pescador",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% contra a raça Peixe no conjunto com Escudo Sombrio do Pescador.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24067",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Pescador"
+  },
+  {
+   "id": 24071,
+   "name": "Greva Sombria do Matador",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% contra a raça Dragão no conjunto com Escudo Sombrio do Matador.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24071",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Matador"
+  },
+  {
+   "id": 24068,
+   "name": "Greva Sombria do Satanista",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% contra a raça Anjo no conjunto com Escudo Sombrio do Satanista.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24068",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Satanista"
+  },
+  {
+   "id": 24069,
+   "name": "Greva Sombria do Colecionador",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% contra a raça Amorfo no conjunto com Escudo Sombrio do Colecionador.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24069",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Colecionador"
+  },
+  {
+   "id": 24070,
+   "name": "Greva Sombria do Exorcista",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% contra a raça Morto-Vivo no conjunto com Escudo Sombrio do Exorcista.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24070",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Exorcista"
+  },
+  {
+   "id": 24064,
+   "name": "Greva Sombria do Jardineiro",
+   "slot": "sombrioCalcado",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +3% contra a raça Planta no conjunto com Escudo Sombrio do Jardineiro.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/24064",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Greva+Sombria+do+Jardineiro"
+  },
+  {
    "id": 24052,
    "name": "Escudo Sombrio do Açougueiro",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 3,
-    "de100a174": 3,
-    "nv175mais": 3
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
    },
-   "caveats": null,
+   "caveats": "Sem EXP próprio — +3% contra a raça Humanoide no conjunto com Greva Sombria do Açougueiro.",
    "raceOnly": "Humanoide",
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24052",
@@ -1865,11 +2000,11 @@
    "name": "Escudo Sombrio do Carniceiro",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 3,
-    "de100a174": 3,
-    "nv175mais": 3
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
    },
-   "caveats": null,
+   "caveats": "Sem EXP próprio — +3% contra a raça Bruto no conjunto com Greva Sombria do Carniceiro.",
    "raceOnly": "Bruto",
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24054",
@@ -1880,11 +2015,11 @@
    "name": "Escudo Sombrio do Inseticida",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 3,
-    "de100a174": 3,
-    "nv175mais": 3
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
    },
-   "caveats": null,
+   "caveats": "Sem EXP próprio — +3% contra a raça Inseto no conjunto com Greva Sombria do Inseticida.",
    "raceOnly": "Inseto",
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24055",
@@ -1895,11 +2030,11 @@
    "name": "Escudo Sombrio do Pescador",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 3,
-    "de100a174": 3,
-    "nv175mais": 3
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
    },
-   "caveats": null,
+   "caveats": "Sem EXP próprio — +3% contra a raça Peixe no conjunto com Greva Sombria do Pescador.",
    "raceOnly": "Peixe",
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24056",
@@ -1910,11 +2045,11 @@
    "name": "Escudo Sombrio do Matador",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 3,
-    "de100a174": 3,
-    "nv175mais": 3
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
    },
-   "caveats": null,
+   "caveats": "Sem EXP próprio — +3% contra a raça Dragão no conjunto com Greva Sombria do Matador.",
    "raceOnly": "Dragão",
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24057",
@@ -1925,11 +2060,11 @@
    "name": "Escudo Sombrio do Satanista",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 3,
-    "de100a174": 3,
-    "nv175mais": 3
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
    },
-   "caveats": null,
+   "caveats": "Sem EXP próprio — +3% contra a raça Anjo no conjunto com Greva Sombria do Satanista.",
    "raceOnly": "Anjo",
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24058",
@@ -1940,11 +2075,11 @@
    "name": "Escudo Sombrio do Colecionador",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 3,
-    "de100a174": 3,
-    "nv175mais": 3
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
    },
-   "caveats": null,
+   "caveats": "Sem EXP próprio — +3% contra a raça Amorfo no conjunto com Greva Sombria do Colecionador.",
    "raceOnly": "Amorfo",
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24059",
@@ -1955,11 +2090,11 @@
    "name": "Escudo Sombrio do Exorcista",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 3,
-    "de100a174": 3,
-    "nv175mais": 3
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
    },
-   "caveats": null,
+   "caveats": "Sem EXP próprio — +3% contra a raça Morto-Vivo no conjunto com Greva Sombria do Exorcista.",
    "raceOnly": "Morto-Vivo",
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24060",
@@ -1970,11 +2105,11 @@
    "name": "Escudo Sombrio do Jardineiro",
    "slot": "sombrioEscudo",
    "exp": {
-    "ate99": 3,
-    "de100a174": 3,
-    "nv175mais": 3
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
    },
-   "caveats": null,
+   "caveats": "Sem EXP próprio — +3% contra a raça Planta no conjunto com Greva Sombria do Jardineiro.",
    "raceOnly": "Planta",
    "view": null,
    "dp": "https://www.divine-pride.net/database/item/24061",
@@ -2161,36 +2296,6 @@
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Planta+Carn%C3%ADvora"
   },
   {
-   "id": 300834,
-   "name": "Carta Baby Shark",
-   "slot": "cartaCapa",
-   "exp": {
-    "ate99": 15,
-    "de100a174": 15,
-    "nv175mais": 15
-   },
-   "caveats": "Bônus apenas durante o evento Baby Shark.",
-   "raceOnly": null,
-   "view": null,
-   "dp": "https://www.divine-pride.net/database/item/300834",
-   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Baby+Shark"
-  },
-  {
-   "id": 300835,
-   "name": "Carta Família Tubarão",
-   "slot": "cartaCapa",
-   "exp": {
-    "ate99": 15,
-    "de100a174": 15,
-    "nv175mais": 15
-   },
-   "caveats": "Bônus apenas durante o evento Baby Shark.",
-   "raceOnly": null,
-   "view": null,
-   "dp": "https://www.divine-pride.net/database/item/300835",
-   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Carta+Fam%C3%ADlia+Tubar%C3%A3o"
-  },
-  {
    "id": 19533,
    "name": "[Visual] Touca de Esporo",
    "slot": "visualTopo",
@@ -2204,21 +2309,6 @@
    "view": 114,
    "dp": "https://www.divine-pride.net/database/item/19533",
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Touca+de+Esporo"
-  },
-  {
-   "id": 401367,
-   "name": "[Visual] Cabeça do Baby Shark",
-   "slot": "visualTopo",
-   "exp": {
-    "ate99": 5,
-    "de100a174": 5,
-    "nv175mais": 5
-   },
-   "caveats": "Bônus apenas durante o evento Baby Shark.",
-   "raceOnly": null,
-   "view": 2833,
-   "dp": "https://www.divine-pride.net/database/item/401367",
-   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Cabe%C3%A7a+do+Baby+Shark"
   },
   {
    "id": 25171,
@@ -3068,6 +3158,78 @@
    ],
    "bonus": 5,
    "note": "Corvo + Coroa do Líder"
+  },
+  {
+   "items": [
+    24052,
+    24062
+   ],
+   "bonus": 3,
+   "note": "Escudo Sombrio do Açougueiro + Greva Sombria do Açougueiro (somente raça Humanoide)"
+  },
+  {
+   "items": [
+    24054,
+    24065
+   ],
+   "bonus": 3,
+   "note": "Escudo Sombrio do Carniceiro + Greva Sombria do Carniceiro (somente raça Bruto)"
+  },
+  {
+   "items": [
+    24055,
+    24066
+   ],
+   "bonus": 3,
+   "note": "Escudo Sombrio do Inseticida + Greva Sombria do Inseticida (somente raça Inseto)"
+  },
+  {
+   "items": [
+    24056,
+    24067
+   ],
+   "bonus": 3,
+   "note": "Escudo Sombrio do Pescador + Greva Sombria do Pescador (somente raça Peixe)"
+  },
+  {
+   "items": [
+    24057,
+    24071
+   ],
+   "bonus": 3,
+   "note": "Escudo Sombrio do Matador + Greva Sombria do Matador (somente raça Dragão)"
+  },
+  {
+   "items": [
+    24058,
+    24068
+   ],
+   "bonus": 3,
+   "note": "Escudo Sombrio do Satanista + Greva Sombria do Satanista (somente raça Anjo)"
+  },
+  {
+   "items": [
+    24059,
+    24069
+   ],
+   "bonus": 3,
+   "note": "Escudo Sombrio do Colecionador + Greva Sombria do Colecionador (somente raça Amorfo)"
+  },
+  {
+   "items": [
+    24060,
+    24070
+   ],
+   "bonus": 3,
+   "note": "Escudo Sombrio do Exorcista + Greva Sombria do Exorcista (somente raça Morto-Vivo)"
+  },
+  {
+   "items": [
+    24061,
+    24064
+   ],
+   "bonus": 3,
+   "note": "Escudo Sombrio do Jardineiro + Greva Sombria do Jardineiro (somente raça Planta)"
   }
  ]
 }

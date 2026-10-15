@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { type Grade, ITEM_BY_ID, SLOT_BY_KEY } from './exp-data';
+import { BANDS, type Grade, ITEM_BY_ID, SLOT_BY_KEY } from './exp-data';
 import { computeBreakdown, itemExp, totalExp } from './exp-math';
 
 describe('computeBreakdown / totalExp', () => {
@@ -68,10 +68,40 @@ describe('computeBreakdown / totalExp', () => {
     expect(totalExp([24213, 24212], 'ate99')).toBe(20);
   });
 
-  it('Carta Baby Shark counts in the garment card slot', () => {
-    expect(ITEM_BY_ID.get(300834)?.slot).toBe('cartaCapa');
-    expect(SLOT_BY_KEY.get('cartaCapa')?.pool).toBe('cartaCapa');
-    expect(totalExp([480824, 300834], 'de100a174')).toBe(25);
+  it('expired Baby Shark bonuses no longer count, while the bag keeps its permanent +10%', () => {
+    for (const id of [300834, 300835, 401367]) {
+      expect(ITEM_BY_ID.has(id)).toBe(false);
+    }
+    expect(SLOT_BY_KEY.has('cartaCapa')).toBe(false);
+    for (const { key } of BANDS) {
+      expect(totalExp([480824, 300834, 300835, 401367], key)).toBe(10);
+    }
+  });
+
+  it.each([
+    [24052, 24062, 'Humanoide'],
+    [24054, 24065, 'Bruto'],
+    [24055, 24066, 'Inseto'],
+    [24056, 24067, 'Peixe'],
+    [24057, 24071, 'Dragão'],
+    [24058, 24068, 'Anjo'],
+    [24059, 24069, 'Amorfo'],
+    [24060, 24070, 'Morto-Vivo'],
+    [24061, 24064, 'Planta'],
+  ])('racial shadow shield %i needs greave %i for its +3%% against %s', (shield, greave, race) => {
+    expect(ITEM_BY_ID.get(shield)?.slot).toBe('sombrioEscudo');
+    expect(ITEM_BY_ID.get(greave)?.slot).toBe('sombrioCalcado');
+    const wrongGreave = greave === 24062 ? 24065 : 24062;
+    for (const { key } of BANDS) {
+      expect(totalExp([shield], key)).toBe(0);
+      expect(totalExp([greave], key)).toBe(0);
+      expect(totalExp([shield, wrongGreave], key)).toBe(0);
+      const b = computeBreakdown([shield, greave], key);
+      expect(b.itemsTotal).toBe(0);
+      expect(b.setsTotal).toBe(3);
+      expect(b.total).toBe(3);
+      expect(b.sets[0]!.set.note).toContain(`somente raça ${race}`);
+    }
   });
 
   it('Mestre dos Mestres only counts on a Balão Poring', () => {
