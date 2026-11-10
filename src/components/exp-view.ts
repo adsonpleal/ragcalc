@@ -96,7 +96,7 @@ const PRINCIPAL_COLUMNS: string[][] = [
 ];
 const EXTRA_GROUPS: { title: string; keys: string[] }[] = [
   { title: 'Equipamentos Sombrios', keys: ['sombrioArma', 'sombrioEscudo', 'sombrioCalcado'] },
-  { title: 'Visuais (Costume)', keys: ['visualTopo', 'visualMeio', 'visualCapa'] },
+  { title: 'Visuais (Costume)', keys: ['visualTopo', 'visualMeio', 'visualBaixo', 'visualCapa'] },
   { title: 'Pedras de EXP', keys: ['pedraTopo', 'pedraMeio', 'pedraBaixo'] },
 ];
 
@@ -682,7 +682,7 @@ function characterUrl(state: State): string {
   };
   const headTop = viewOf('visualTopo') ?? viewOf('topo');
   const headMid = viewOf('visualMeio') ?? viewOf('meio');
-  const headLow = viewOf('baixo');
+  const headLow = viewOf('visualBaixo') ?? viewOf('baixo');
   const garment = viewOf('visualCapa') ?? viewOf('capa');
   const shield = viewOf('escudo');
   const headgear = [...new Set([headTop, headMid, headLow].filter((v): v is number => v != null))];

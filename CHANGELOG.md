@@ -6,6 +6,55 @@ o versionamento é informal enquanto o projeto está pré-1.0. O texto voltado a
 usuário (e a fonte do anúncio automático no Discord após o deploy) fica em
 `src/changelog.ts`.
 
+## [0.3.10] — 2026-11-10
+
+### Adicionado
+
+- **Trio do Festival da Colheita** no Conjunto de EXP, com o evento ativo
+  (29/10 ~ 23/11, conforme os
+  [Patch Notes de 09/11](https://ro.gnjoyamericas.com/pt/news/notice/453)):
+  **[Visual] Batata Quente** (31975, +5%), **[Visual] Chapéu do Festival da
+  Colheita** (31368) e **[Visual] Espetinhos** (31580), os dois últimos sem EXP
+  próprio. Os conjuntos com a Batata Quente somam +5% cada e acumulam: +15% com
+  as três peças. A 0.3.9 tinha deixado a Batata Quente de fora justamente por o
+  Festival não estar entre os eventos ativos; agora está, e as três peças saem
+  do evento (missão do Pedido de Louise e presentes, conforme a
+  [manutenção de 28/10](https://ro.gnjoyamericas.com/pt/news/notice/444)).
+- **Espaço de Visual (Baixo)** na montagem do conjunto — o pool não existia, e
+  sem ele a Batata Quente não teria onde ser equipada. O boneco passa a preferir
+  o visual de Baixo ao equipamento de Baixo, como já fazia em Topo, Meio e Capa.
+- **Motor Desbravador** (480956) na lista de Capa: +10% de EXP com refino +7 ou
+  mais. É o único item de EXP permanente que faltava na lista — o bônus não
+  depende de evento.
+
+### Corrigido
+
+- **Tabelas regeradas** contra o
+  [ragassets publicado em 10/11](https://assets.latam-tools.com.br/raw/items.json)
+  (`Last-Modified: 2026-11-10 01:34 UTC`). `classes.json` (85 classes) e as
+  descrições dos 183 itens que já estavam na lista voltaram **byte a byte
+  idênticas**: nenhum nome, valor de EXP ou classe mudou nesta atualização do
+  cliente. `exp-descriptions.json` passou de 177 para 181 descrições por causa
+  dos quatro itens novos; seguem os mesmos seis ids sem texto no cliente.
+
+### Notas
+
+- **Nada foi removido**: nenhum item da lista sumiu do cliente, perdeu a linha
+  de EXP ou teve o bônus condicionado a um evento encerrado. Os 23 itens cujo
+  valor curado não bate com o texto do cliente são todos os de refino
+  progressivo, e cada um já explica a conta em `caveats`.
+- **[Visual] Jaow Pirun** (401213) ficou **fora** da lista: o bônus é
+  `[Durante o Evento]` e nenhuma nota oficial associa o item a um evento ativo.
+  Além disso, os
+  [Patch Notes de 28/10](https://ro.gnjoyamericas.com/pt/news/notice/448)
+  avisam que a descrição do cliente está **errada** — o efeito correto seria
+  EXP +10% (o cliente mostra +5%), e a correção ainda não saiu.
+- **[Visual] Olho do Necromante** (410576) também ficou de fora, pelo mesmo
+  motivo: bônus `[Durante o Evento]` sem evento ativo correspondente nas notas.
+- As cartas **Baby Shark** (300834), **Família Tubarão** (300835) e a
+  **[Visual] Cabeça do Baby Shark** (401367) continuam fora, como na 0.3.9: o
+  evento encerrou em 12/10 e o slot de Carta (Capa) segue oculto.
+
 ## [0.3.9] — 2026-10-15
 
 ### Removido
