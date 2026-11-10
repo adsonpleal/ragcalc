@@ -976,6 +976,21 @@
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Mochila+de+Amistr+Furtiva"
   },
   {
+   "id": 480956,
+   "name": "Motor Desbravador",
+   "slot": "capa",
+   "exp": {
+    "ate99": 10,
+    "de100a174": 10,
+    "nv175mais": 10
+   },
+   "caveats": "Exige refino +7 ou mais.",
+   "raceOnly": null,
+   "view": null,
+   "dp": "https://www.divine-pride.net/database/item/480956",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=Motor+Desbravador"
+  },
+  {
    "id": 22101,
    "name": "Botas do ArchAngeling",
    "slot": "calcado",
@@ -2311,6 +2326,51 @@
    "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Touca+de+Esporo"
   },
   {
+   "id": 31368,
+   "name": "[Visual] Chapéu do Festival da Colheita",
+   "slot": "visualTopo",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +5% no conjunto com a [Visual] Batata Quente. Bônus válido só durante o Festival da Colheita (29/10 a 23/11).",
+   "raceOnly": null,
+   "view": 1677,
+   "dp": "https://www.divine-pride.net/database/item/31368",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Chap%C3%A9u+do+Festival+da+Colheita"
+  },
+  {
+   "id": 31580,
+   "name": "[Visual] Espetinhos",
+   "slot": "visualMeio",
+   "exp": {
+    "ate99": 0,
+    "de100a174": 0,
+    "nv175mais": 0
+   },
+   "caveats": "Sem EXP próprio — +5% no conjunto com a [Visual] Batata Quente. Bônus válido só durante o Festival da Colheita (29/10 a 23/11).",
+   "raceOnly": null,
+   "view": 1792,
+   "dp": "https://www.divine-pride.net/database/item/31580",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Espetinhos"
+  },
+  {
+   "id": 31975,
+   "name": "[Visual] Batata Quente",
+   "slot": "visualBaixo",
+   "exp": {
+    "ate99": 5,
+    "de100a174": 5,
+    "nv175mais": 5
+   },
+   "caveats": "Bônus válido só durante o Festival da Colheita (29/10 a 23/11). Os conjuntos com o Chapéu do Festival da Colheita e com os Espetinhos somam +5% cada.",
+   "raceOnly": null,
+   "view": 2154,
+   "dp": "https://www.divine-pride.net/database/item/31975",
+   "market": "https://ro.gnjoylatam.com/pt/intro/shop-search/trading?storeType=BUY&serverType=FREYA&searchWord=%5BVisual%5D+Batata+Quente"
+  },
+  {
    "id": 25171,
    "name": "Pedra de EXP +2% (Topo)",
    "slot": "pedraTopo",
@@ -3230,6 +3290,22 @@
    ],
    "bonus": 3,
    "note": "Escudo Sombrio do Jardineiro + Greva Sombria do Jardineiro (somente raça Planta)"
+  },
+  {
+   "items": [
+    31975,
+    31368
+   ],
+   "bonus": 5,
+   "note": "[Visual] Batata Quente + [Visual] Chapéu do Festival da Colheita (Festival da Colheita)"
+  },
+  {
+   "items": [
+    31975,
+    31580
+   ],
+   "bonus": 5,
+   "note": "[Visual] Batata Quente + [Visual] Espetinhos (Festival da Colheita)"
   }
  ]
 }

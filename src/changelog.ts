@@ -14,6 +14,15 @@ export type ChangelogEntry = {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: "0.3.10",
+    date: "2026-11-10",
+    changes: [
+      "Os visuais do Festival da Colheita entraram no Conjunto de EXP: a [Visual] Batata Quente dá +5%, e sobe para +10% com o [Visual] Chapéu do Festival da Colheita ou com os [Visual] Espetinhos — +15% com os três juntos. Os bônus valem só durante o evento, que vai até 23/11.",
+      "Novo espaço de Visual (Baixo) na montagem do conjunto, para a Batata Quente.",
+      "O Motor Desbravador entrou na lista de Capa: +10% de EXP com refino +7 ou mais, sem depender de evento.",
+    ],
+  },
+  {
     version: "0.3.9",
     date: "2026-10-15",
     changes: [
