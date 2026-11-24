@@ -6,6 +6,51 @@ o versionamento é informal enquanto o projeto está pré-1.0. O texto voltado a
 usuário (e a fonte do anúncio automático no Discord após o deploy) fica em
 `src/changelog.ts`.
 
+## [0.3.11] — 2026-11-24
+
+### Removido
+
+- **Trio do Festival da Colheita** do Conjunto de EXP: **[Visual] Batata
+  Quente** (31975), **[Visual] Chapéu do Festival da Colheita** (31368) e
+  **[Visual] Espetinhos** (31580). O evento encerrou na manutenção de 23/11 e o
+  Festival da Neve ocupou o lugar dele a partir de 24/11, conforme a
+  [Manutenção Programada de 23.11](https://ro.gnjoyamericas.com/pt/news/notice/457);
+  os bônus valiam só durante o evento (29/10 ~ 23/11), como a própria
+  `caveats` de cada peça registrava. Saíram com elas os dois conjuntos de +5%
+  que a Batata Quente formava. Os espaços de **Visual (Meio)** e **Visual
+  (Baixo)** ficam ocultos por não terem mais itens, como já acontecia com
+  Visual (Capa); links antigos ignoram os ids removidos.
+
+### Corrigido
+
+- **Tabelas regeradas** contra o
+  [ragassets publicado em 24/11](https://assets.latam-tools.com.br/raw/items.json)
+  (`Last-Modified: 2026-11-24 04:54 UTC`, a primeira publicação depois da
+  manutenção). `classes.json` voltou **byte a byte idêntico** (85 classes):
+  nenhuma classe nova, renomeada ou removida. `exp-descriptions.json` passou de
+  181 para 178 descrições — exatamente as três dos itens removidos — e seguem os
+  mesmos seis ids sem texto no cliente.
+- **Descrições da Manopla Sombria de EXP** (24770) e do **Motor Desbravador**
+  (480956) atualizadas com o texto novo do cliente. **Nenhum valor de EXP
+  mudou**: a Manopla passou a descrever o bônus como +20% com **-10% a partir do
+  nv.175**, em vez das duas faixas anteriores (+20% até o nv.174 / +10% no 175 e
+  acima), o que dá o mesmo resultado nos dois níveis; no Motor só o peso foi
+  corrigido de 0 para 50.
+
+### Notas
+
+- **Nenhum item novo de EXP nesta atualização.** Nem o Festival da Neve
+  (24/11 ~ 21/12), nem os 15 novos Visuais de Malangdo, nem o [Visual] Cofrinho
+  de Porco (missão do Profeta K) ou o [Visual] Magnus Dominus (Tesouro Diário)
+  trazem bônus de EXP: a varredura das 18.304 linhas de `/raw/items.json` não
+  achou menção a EXP em nenhum deles.
+- O **Passe de Batalha** não tem item nesta lista, então o fim da temporada 2
+  em 23/11 não muda nada aqui.
+- Continuam fora da lista, pelos mesmos motivos registrados nas versões
+  anteriores: as cartas **Baby Shark** (300834) e **Família Tubarão** (300835),
+  a **[Visual] Cabeça do Baby Shark** (401367), o **[Visual] Jaow Pirun**
+  (401213) e o **[Visual] Olho do Necromante** (410576).
+
 ## [0.3.10] — 2026-11-10
 
 ### Adicionado
