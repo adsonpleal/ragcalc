@@ -14,6 +14,15 @@ export type ChangelogEntry = {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: "0.3.11",
+    date: "2026-11-24",
+    changes: [
+      "Os visuais do Festival da Colheita saíram do Conjunto de EXP: o evento acabou na manutenção de 23/11, e os bônus da [Visual] Batata Quente, do [Visual] Chapéu do Festival da Colheita e dos [Visual] Espetinhos não valem mais. Os espaços de Visual (Meio) e Visual (Baixo) ficam escondidos por não terem mais itens.",
+      "Descrições atualizadas com o texto novo do jogo: a Manopla Sombria de EXP passou a explicar o bônus como +20% com -10% a partir do nível 175, e o peso do Motor Desbravador foi corrigido. Nenhum valor de EXP mudou.",
+      "Nada novo entrou na lista: nem o Festival da Neve nem os novos visuais de Malangdo dão EXP.",
+    ],
+  },
+  {
     version: "0.3.10",
     date: "2026-11-10",
     changes: [
